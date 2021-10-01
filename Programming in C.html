@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Programming in C</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+
+.header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 6880px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<nab>
+                                         
+                                  <ul>
+                                       <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                                       <li> <a href="OperatingSystem.html" class="current">Next <i class="fa fa-hand-o-right"></i></a> </li></ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">C Programming</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#Introduction to C">Introduction to C</a></li>
+        <li><a href="#Decision making">C-Decision Making</a></li>
+        <li><a href="#Loop">C Loop</a></li>
+        <li><a href="#Array"> Array</a></li>
+        <li><a href="#Pointer">C Pointers</a></li>
+        <li><a href="#thread">Multithreading</a></li>
+        <li><a href="#Structure">Structure</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>C Programming Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#Introduction to C">Introduction to C</a></li>
+        <li><a href="#Decision making">C-Decision Making</a></li>
+        <li><a href="#Loop">C Loop</a></li>
+        <li><a href="#Array"> Array</a></li>
+        <li><a href="#Pointer">C Pointers</a></li>
+        <li><a href="#thread">Multithreading</a></li>
+        <li><a href="#Structure">Structure</a></li>
+      </ul><br>
+    </div>
+    
+    
+   
+   <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="Introduction to C">   <h1>Introduction to C</h1>
+      <p>C is a programming Language  developed for creating system applications that directly interact with the
+            hardware devices such as drivers, kernels, etc. <br><br>
+  C programming is considered as the base for other programming languages, that is why it is known as mother language.</p>
+<br>
+<p>It can be defined by the following ways:</p>
+<br>
+<ul>
+<li>Mother language</li>
+<li>System programming language</li>
+<li>Procedure-oriented programming language</li>
+<li>Structured programming language</li>
+<li>Mid-level programming language</li>
+</ul><br>
+ <strong>Feature:</strong>C is the widely used language. Which have numbers of feature.<br>
+<h4><strong>A list of most important features of Java language is given below.</strong></h4>
+	<ul><img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\download.png"
+                   width="40%" align="right">
+                 <li>Simple</li>
+ 	<li>Memory Management</li>
+	<li>Function Rich Libraries</li>
+	<li>Efficient</li>
+	<li>Secured</li>
+	<li>Portable</li>
+	<li>Extensible</li>
+	<li>Speed</li>
+	<li>Mid-level Programming Language</li>
+                  </ul>     
+
+ 
+      <h2>Syntax</h2>
+<pre class="prettyprint notranslate">
+#include &lt;stdio.h&gt;
+ int main () {
+   printf("Hello C Programming\n");  
+   return 0;
+}
+</pre>
+
+</section>
+      <hr>
+<section id="Decision making">
+      <h3>C if else Statement</h3>
+    <p>The if-else statement in C is used to perform the operations based on some specific condition.
+          The operations specified in if block are executed if and only if the given condition is true.</p>
+    <h4><strong>There are the following variants of if statement in C language. </strong></h4>
+ 
+   <ul>
+<br>
+   <li>If statement </li>
+   <li> If-else statement</li>
+   <li> Nested If..else statement</li>
+   </ul><br>
+   <h4> If statement </h4>
+<p>The if statement is used to check some given condition and perform some operations depending upon
+ the correctness of that condition. The syntax of the if statement is given below.</p>
+
+      <h3>Syntax</h3>
+<pre class="prettyprint notranslate">
+     if(expression) {  
+     //code to be executed  
+    }  
+</pre>
+<strong> Flowchart of if statement in C  </strong>
+<h1><img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\if1.png" width="40%" align="center"></h1>
+<h3> If statement Example </h3>
+
+<pre class="prettyprint notranslate">
+  #include &lt;stdio.h&gt;
+  int main(){    
+  int number=0;    
+  printf("Enter a number:");    
+  scanf("%d",&number);    
+  if(number%2==0){    
+  printf("%d is even number",number);    
+  }    
+  return 0;  
+  }    
+</pre>
+
+<h4>Output : </h4>
+<pre class="prettyprint notranslate">
+  Enter a number:6
+  6 is even number
+</pre>
+
+ <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" id="btn1" > Read More </button>
+<div id="demo" class="collapse" >
+ 
+   <h4> If else statement </h4>
+<p>The if-else statement is used to perform two operations for a single condition. <br>
+If condition returns true then the statements inside the body of ''if'' are executed and the statements
+inside body of ''else'' are skipped.<br>
+If condition returns false then the statements inside the body of ''if'' are skipped and the statements in ''else'' are executed.</p>
+
+      <h3>Syntax</h3>
+<pre class="prettyprint notranslate">
+   if(expression){  
+   //code to be executed if condition is true  
+   }else{  
+   //code to be executed if condition is false  
+   }  
+</pre>
+<strong> Flowchart of if else statement in C  </strong>
+<h1><img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\if5.png" width="40%" align="center"></h1>
+<h3> If else statement Example </h3>
+
+<pre class="prettyprint notranslate">
+   #include &lt;stdio.h&gt;
+   int main(){    
+   int number=0;    
+   printf("enter a number:");    
+   scanf("%d",&number);     
+   if(number%2==0){    
+   printf("%d is even number",number);    
+   }    
+   else{    
+   printf("%d is odd number",number);    
+   }     
+   return 0;  
+   }    
+</pre>
+
+<h4>Output : </h4>
+<pre class="prettyprint notranslate">
+ enter a number:5
+ 5 is odd number
+ enter a number:8
+ 8 is even number
+</pre>
+
+<br>
+   <h4>  Nested If..else statement </h4>
+<p>When an if else statement is present inside the body of another ''if'' or ''else'' then this is called nested if else.</p>
+
+      <h3>Syntax</h3>
+<pre class="prettyprint notranslate">
+   if(condition) {
+    //Nested if else inside the body of "if"
+    if(condition2) {
+       //Statements inside the body of nested "if"
+    }
+    else {
+       //Statements inside the body of nested "else"
+    }
+}
+else {
+    //Statements inside the body of "else"
+}
+</pre>
+<strong> Flowchart of Nested If..else statement in C  </strong>
+<h1><img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\if1 (1).png" width="40%" align="center"></h1>
+<h3> Nested If..else statement Example </h3>
+
+<pre class="prettyprint notranslate">
+   #include &lt;stdio.h&gt;
+   int main(){    
+   int number=0;    
+   printf("enter a number:");    
+   scanf("%d",&number);     
+   if(number%2==0){    
+   printf("%d is even number",number);    
+   }    
+  else{    
+  printf("%d is odd number",number);    
+  }     
+  return 0;  
+  }       
+</pre>
+
+<h4>Output : </h4>
+<pre class="prettyprint notranslate">
+ enter a number:8
+ 8 is even number
+</pre>
+</div>
+</section>
+<hr>
+<section id="Loop">
+<h3> C Loop </h3>
+<p>The looping can be defined as repeating the same process multiple times until a specific condition satisfies.
+ There are three types of loops used in the C language.</p>
+
+<h4>Use of loop</h4>
+<p>It enables us to alter the flow of the program so that instead of writing the same code again and again,
+ we can repeat the same code for a finite number of times.<br>
+ <strong>For example</strong>, if we need to print the first 10 natural numbers then, instead of using the printf statement 10 times,
+ we can print inside a loop which runs up to 10 iterations.</p>
+<br>
+     <h4> Advantages of loop </h4> 
+      <li> It provides code reusability.</li>
+      <li>Using loops, we do not need to write the same code again and again.</li>
+      <li>Using loops, we can traverse over the elements of data structures (array or linked lists).</li>
+</ul>
+<br>
+<h4><strong> Types of loops </strong> </h4>
+<br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\download (1).png" width="45%" >
+<br>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo1" id="btn2">Read More</button>
+<div id="demo1" class="collapse">
+
+<h4>While loop </h4>
+<p>The while loop in c is to be used in the scenario where we don't know the number of iterations in advance.
+ The block of statements is executed in the while loop until the condition specified in the while loop is satisfied. 
+</p>
+
+      <h3>Syntax</h3>
+<pre class="prettyprint notranslate">
+  while (condition test)
+{
+      //Statements to be executed repeatedly 
+      // Increment (++) or Decrement (--) Operation
+}
+</pre>
+<strong> Flowchart of while loop in C  </strong>
+<h1><img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\while.png" align="center"></h1>
+<h3> While loop Example </h3>
+
+<pre class="prettyprint notranslate">
+  #include &lt;stdio.h&gt;
+  int main(){    
+  int i=1;      
+  while(i<=5){      
+  printf("%d \n",i);      
+  i++;      
+  }  
+  return 0;  
+  }   
+</pre>
+
+<h4>Output : </h4>
+<pre class="prettyprint notranslate">
+1
+2
+3
+4
+5
+</pre>
+<br>
+
+<h4>do while loop </h4>
+<p> Using the do-while loop, we can repeat the execution of several parts of the statements.<br> 
+The do-while loop is mainly used in the case where we need to execute the loop at least once.
+ The do-while loop is mostly used in menu-driven programs where the termination condition depends upon the end user.
+</p>
+
+      <h3>Syntax</h3>
+<pre class="prettyprint notranslate">
+  do{  
+//code to be executed  
+}while(condition);  
+</pre>
+
+<strong> Flowchart of do while loop in C  </strong>
+<h1><img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\dowhile.png" width="40%" align="center"></h1>
+<h3> do while loop Example </h3>
+
+<pre class="prettyprint notranslate">
+  #include &lt;stdio.h&gt;
+  int main()
+{
+	int j=0;
+	do
+	{
+		printf("Value of variable j is: %d\n", j);
+		j++;
+	}while (j<=3);
+	return 0;
+}
+</pre>
+
+<h4>Output : </h4>
+<pre class="prettyprint notranslate">
+Value of variable j is: 0
+Value of variable j is: 1
+Value of variable j is: 2
+Value of variable j is: 3
+</pre>
+
+<br>
+<h4> For loop </h4>
+<p>The for loop in C language is used to iterate the statements or a part of the program several times.
+ It is frequently used to traverse the data structures like the array and linked list.
+</p>
+
+      <h3>Syntax</h3>
+<pre class="prettyprint notranslate">
+ for(Expression 1; Expression 2; Expression 3){  
+//code to be executed  
+}  
+</pre>
+
+<strong> Flowchart of for loop in C  </strong>
+<h1><img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\forloop (1).png" width="40%" align="center"></h1>
+<h3> For loop Example </h3>
+
+<pre class="prettyprint notranslate">
+#include &lt;stdio.h&gt;
+int main(){  
+  int i=0;        
+  for(i=1;i<=5;i++){      
+  printf("%d \n",i);      
+  }     
+  return 0;  
+}  
+</pre>
+
+<h4>Output : </h4>
+<pre class="prettyprint notranslate">
+1
+2
+3
+4
+5
+</pre>
+</div>
+</section>
+<hr>
+<section id="Array">
+<h3>Array</h3>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\images (1).png" width="30%" align="right">
+<p>An array is defined as the collection of similar type of data items stored at contiguous memory locations.<br>
+Which can store the primitive type of data such as int, char, double, float, etc. It also has the capability to store
+ the collection of derived data types, such as pointers, structure, etc.</p>
+<br>
+<p>C array is beneficial if you have to store similar elements.
+ For example, if we want to store the marks of a student in 6 subjects, then we don't need to define different 
+variables for the marks in the different subject.<br>
+Instead of that, we can define an array which can store the marks in each subject at the contiguous memory locations.</p><br>
+<p>Array is index-based, the first element of the array is stored at the 0 index.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\array.gif" width="40%">
+<br><br>
+<strong>Advantages</strong>
+<ul>
+<br>
+<li><strong>Code Optimization:</strong>
+Less code to the access the data.</li>
+<li><strong>Ease of traversing:</strong>
+By using the for loop, we can retrieve the elements of an array easily.</li>
+<li><strong>Ease of sorting:</strong>
+To sort the elements of the array, we need a few lines of code only.</li>
+<li><strong>Random Access:</strong>
+We can access any element randomly using the array.</li>
+
+</ul>
+<br>
+<strong>Disadvantages </strong>
+<ul>
+<br>
+<li><strong>Fixed Size:</strong>
+Whatever size, we define at the time of declaration of the array, we can't exceed the limit.
+</li>
+</ul>
+<br>
+<h4>Syntax to declare array in C </h4>
+<pre class="result notranslate">
+data_type array_name[array_size];  
+</pre>
+<br>
+<h4> Instantiation of an Array in C </h4>
+<pre class="result notranslate">
+marks[0]=80;//initialization of array  
+marks[1]=60;  
+marks[2]=70;  
+marks[3]=85;  
+marks[4]=75;  
+</pre>
+<br>
+<h4> Example of array in C </h4>
+<pre class="result notranslate">
+#include &lt;stdio.h&gt;
+int main(){      
+int i=0;    
+int marks[3];//declaration of array       
+marks[0]=80;//initialization of array    
+marks[1]=60;    
+marks[2]=70;      
+//traversal of array    
+for(i=0;i<3;i++){      
+printf("%d \n",marks[i]);    
+}//end of for loop     
+return 0;  
+}   
+</pre>
+
+<h4>Output : </h4>
+<pre class="prettyprint notranslate">
+80
+60
+70
+</pre>
+
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo2" id="btn3">Read More</button>
+<div id="demo2" class="collapse">
+<br>
+<h4> Two Dimensional Array in C</h4>
+<p>The two-dimensional array can be defined as an array of arrays.
+The 2D array is organized as matrices which can be represented as the collection of rows and columns.</p>
+<br>
+<strong> Syntax to declare 2D </strong>
+<pre class="prettyprint notranslate">
+  data_type array_name[rows][columns];  
+</pre><br>
+<strong> Example of 2D </strong>
+<pre class="prettyprint notranslate">
+  int twodimen[4][3]; 
+</pre>
+
+<br>
+<h4>Multiple dimensional array </h4>
+<p>C programming language allows multidimensional arrays. Here is the general form of a multidimensional array declaration -</p>
+<br>
+<strong> Syntax to declare Multi-dimensional </strong>
+<pre class="prettyprint notranslate">
+  type name[size1][size2]...[sizeN];
+</pre>
+<br>
+<strong> Example of  Multi-dimensional </strong>
+<pre class="prettyprint notranslate">
+  int threedim[5][10][4];
+</pre>
+</div>
+</section>
+
+<hr>
+<section id="Pointer">
+<h3>C Pointer</h3>
+<p>The pointer in C language is a variable which stores the address of another variable.
+This variable can be of type int, char, array, function, or any other pointer. The size of the pointer depends on the architecture</p>
+<br>
+<strong>Declaring a pointer </strong>
+<pre class="prettyprint notranslate">
+  int *a;//pointer to int  
+ char *c;//pointer to char  
+</pre>
+<br>
+<strong> Pointer Example </strong><br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\pointer.png" width="30%">
+<p>In the above figure, pointer variable stores the address of number variable, i.e., fff4. 
+The value of number variable is 50. But the address of pointer variable p is aaa3.</p>
+<br>
+<strong>Example with code </strong>
+<pre class="result notranslate">
+  #include &lt;stdio.h&gt;
+  int main(){  
+  number=50;    
+  int *p;      
+  p=&number;//stores the address of number variable    
+  printf("Address of p variable is %x \n",p); // p contains the address of the number therefore printing p gives the address of number.     
+  printf("Value of p variable is %d \n",*p); // As we know that * is used to dereference a pointer therefore if we print *p, we will get
+  the value stored at the address contained by p.    
+  return 0;  
+}    
+</pre>
+<br>
+<strong> Output:- </strong>
+<pre class="result notranslate">
+ Address of number variable is fff4
+ Address of p variable is fff4
+ Value of p variable is 50
+</pre>
+
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo3" id="btn4">Read More</button>
+<div id="demo3" class="collapse">
+<br>
+<strong>Advantages of Pointer</strong>
+<ul>
+<li>Pointer reduces the code and improves the performance, it is used to retrieving strings, trees, etc.
+ and used with arrays, structures, and functions.</li>
+<li>We can return multiple values from a function using the pointer.</li>
+<li>It makes you able to access any memory location in the computer's memory.</li>
+</ul>
+</div>
+</section>
+<hr>
+<section id="Structure">
+<h3>Structure</h3>
+<p>Structure is a group of variables of different data types represented by a single name.
+ Lets take an example to understand the need of a structure in C programming.<br>
+For example, an entity Student may have its name (string), roll number (int), marks (float). To store 
+such type of information regarding an entity student, we have the following approaches:</p>
+<ul>
+<li>Construct individual arrays for storing names, roll numbers, and marks.</li>
+<li>Use a special data structure to store the collection of different data types.</li>
+</ul>
+<br>
+<strong>Declaring a Structure </strong>
+<pre class="prettyprint prettyprinted">
+  struct struct_name {
+   DataType member1_name;
+   DataType member2_name;
+   DataType member3_name;
+   ...
+} var_name;
+</pre>
+<br>
+<strong>Declaring a Structure </strong>
+<pre class="prettyprint prettyprinted">
+struct employee  
+{   int id;  
+    char name[20];  
+    float salary;  
+};  
+</pre>
+
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo5" id="btn6">Read More</button>
+<div id="demo5" class="collapse">
+<br>
+<strong>Example of Structure </strong>
+<pre class="result notranslate">
+  #include &lt;stdio.h&gt;
+/* Created a structure here. The name of the structure is
+ * StudentData.
+ */
+struct StudentData{
+    char *stu_name;
+    int stu_id;
+    int stu_age;
+};
+int main()
+{
+     /* student is the variable of structure StudentData*/
+     struct StudentData student;
+
+     /*Assigning the values of each struct member here*/
+     student.stu_name = "Steve";
+     student.stu_id = 1234;
+     student.stu_age = 30;
+
+     /* Displaying the values of struct members */
+     printf("Student Name is: %s", student.stu_name);
+     printf("\nStudent Id is: %d", student.stu_id);
+     printf("\nStudent Age is: %d", student.stu_age);
+     return 0;
+}   
+</pre>
+<br>
+<strong> Output:- </strong>
+<pre class="result notranslate">
+Student Name is: Steve
+Student Id is: 1234
+Student Age is: 30
+</pre>
+
+</div>
+</section>
+<hr>
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

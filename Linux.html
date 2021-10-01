@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Linux</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+
+ .header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 3540px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+<div class="header">
+<nab>
+                                         
+                                             <ul>
+                                                    <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                                                   <li> <a href="DBMS.html" class="current">Next <i class="fa fa-hand-o-right"></i></a> </li></ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">Linux</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#Linux">Linux</a></li>
+        <li><a href="#Principle">Principle of Linux</a></li>
+        <li><a href="#Text">Text Processing Commands</a></li>
+        <li><a href="#Shells">Linux Shells</a></li>
+       </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>Linux Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#Linux">Linux</a></li>
+        <li><a href="#Principle">Principle of Linux</a></li>
+        <li><a href="#Text">Text Processing Commands</a></li>
+        <li><a href="#Shells">Linux Shells</a></li>     
+      </ul><br>
+    </div>
+    <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="Linux"> 
+   <h1>Linux</h1>
+      <p>Linux is an operating system or a kernel. It is distributed under an open source license. Its functionality list is quite like UNIX. 
+ </p>
+<p>The most common use is as a server, but Linux is also used in desktop computers, 
+smartphones, e-book readers and gaming consoles, etc.</p>
+<p>A distribution of Linux includes the kernel ,system utilities, programs 
+and tools for downloading, installing and uninstalling OS updates.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\linux_architecture.jpg" width="65%" align="center">
+<h3>Classification of Linux</h3>
+<p>1. Being open-source, anyone with programming knowledge can modify it.</p>
+<p>2. The Linux operating systems now offer millions of programs/applications to choose from, most of them free.</p>
+<p>3. Once you have Linux installed you no longer need an antivirus , Linux is a highly secure system.</p>
+</section>
+<hr>
+<section id="Principle">
+<h2>Principle of Linux</h2> 
+<ul>
+<li> Everything is a file. </li>
+<li> Small, single-purpose programs.</li>
+<li> Ability to chain programs together to perform complex tasks.</li>
+<li> Avoid captive user interfaces.</li>
+<li> Configuration data stored in text.</li>
+</ul>
+<h4><strong> Everything is a file :- </strong></h4>
+<p>UNIX systems have many powerful utilities designed to create and manipulate files.
+ The UNIX security model is based around the security of files. </p>
+
+<h4><strong>Small, single-purpose programs :- </strong></h4>
+<p>UNIX provides many small utilities that perform one task very well. When new functionality is
+ required, the general philosophy is to create a separate program rather than to extend an existing utility with new features.</p>
+
+<h4><strong>Ability to chain programs together to perform complex tasks :- </strong></h4>
+<p>A core design feature of UNIX is that the output of one program can be the input for another. 
+This gives the user the flexibility to combine many small programs together to perform a larger, more complex task.</p>
+
+<h4><strong>Avoid captive user interfaces :- </strong></h4>
+<p>Interactive commands are rare in UNIX. Most commands expect their options and arguments to be typed
+ on the command line when the command is launched.</p>
+<h4><strong>Configuration data stored in text :- </strong></h4>
+<p>Storing configuration in text allows an administrator to move a configuration from one machine to another easily. </p>
+</section>
+      <hr>
+<section id="Text">
+
+      <h2>Text Processing Commands</h2>
+
+<p>Linux/Unix offers many text processing tools which are very powerful 
+and can be used together to process data and extract information from files.</p>
+<p>Some of these are listed below with few commonly used examples:</p>
+<p>1. <strong>head : </strong> Display first lines of a file.</p>
+<p>2. <strong>tail : </strong> Display the last part of a file. </p>
+<p>3. <strong>cat : </strong>Concatenate and print files.</p>
+<p>4. <strong>less :</strong> Paged output, with support to move forward and backward.</strong></p>
+<p>5. <strong>cut : </strong>Cut out selected portions of each line of a file.</p>
+<p>6. <strong>sort : </strong>Sort lines of text files.</p>
+<p>7. <strong>uniq : </strong> Report or filter out repeated lines in a file.</p>
+<p>8. <strong>paste : </strong>Corresponding or subsequent lines of files.</p>
+<p>9. <strong>join : </strong>Relational database operator</p>
+<p>10. <strong>diff : </strong>Compare files line by line</p>
+<p>11. <strong>awk : </strong>Pattern-directed scanning and processing language</p>
+<p>12. <strong>grep : </strong>Print lines matching a pattern</p>
+<p>13. <strong>find : </strong>Display lines beginning with a given string</p>
+<p>14. <strong>wc : </strong>Word, line, character, and byte count</p>
+<p>15. <strong>tr : </strong>Translate characters</p>
+<p>16. <strong>sed : </strong>Stream editor.</p>
+<br>
+</section>
+<hr>
+
+<section id="Shells">
+<h2>Linux Shells </h2>
+
+<p>The shell is the command interpretor in an operating system such as Unix or GNU/Linux, it is a program that executes other programs.
+<br> It provides a computer user an interface to the Unix/GNU Linux system so that the user can run different commands 
+or utilities/tools with some input data.</p> 
+<p>When the shell has finished executing a program, it sends an output to the user on the screen, which is the standard output device.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Shells.png" width="75%" align="center">
+<ul>
+<li>Bash Shell</li>
+<li>Tcsh/Csh Shell</li>
+<li>Ksh Shell</li>
+<li>Zsh Shell</li>
+<li>Fish</li>
+</ul>
+<br>
+
+<h4><strong>Bash Shell</strong></h4>
+<p>Bash stands for Bourne Again Shell and it is the default shell on many Linux distributions today. It is also a sh-compatible 
+shell and offers practical improvements over sh for programming and interactive use which includes:</p>
+<p>1. Command line editing</p>
+<p>2. Job Control</p>
+<p>3. Unlimited size Indexed arrays</p>
+<h4><strong>Tcsh/Csh Shell</strong></h4>
+<p>Tcsh is enhanced C shell, it can be used as a interactive login shell and shell script command processor.</p>
+<p>Tcsh has the following features: </p>
+
+<ul>
+<li>1. C like syntax</li>
+<li>2. Command-line editor</li>
+<li>3. Programmable word and filename completion</li>
+</ul>
+<h4><strong>Ksh Shell</strong></h4>
+<p>Ksh stands for Korn shell , it is a complete, powerful, high-level programming language and also an interactive
+ command language just like many other Unix/GNU Linux shells.</p>
+<h4><strong>Zsh Shell</strong></h4>
+<p>Zsh is designed to be interactive and it incorporates many features of other Unix/GNU Linux shells such as bash, tcsh and ksh.
+<br>It is also a powerful scripting language just like the other shells available. </p>
+<h4><strong>Fish</strong></h4>
+<p>Fish stands for "friendly interactive shell" and was authored in 2005.
+ It was intended to be fully interactive and user friendly, just like the other shells. </p>
+<p>It has some pretty good features that include:</p>
+<ul>
+<li>1. Man page completions</li>
+<li>2. Fully scriptable with clean scripts</li>
+<li>3. Support for term256 terminal technology</li>
+</ul>
+</section>
+<hr>
+
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

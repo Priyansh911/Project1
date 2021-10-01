@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Software Engineering</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+ .header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 6890px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+<div class="header">
+<nab>
+                                         
+                                 <ul>
+                                   <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                                   <li> <a href="CGMA.html" class="current">Next <i class="fa fa-hand-o-right"></i></a> </li></ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+ 
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">Software Engineering</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#Software">Software Engineering</a></li>
+        <li><a href="#SDLC">SDLC</a></li>
+        <li><a href="#Waterfall">Waterfall Model</a></li>
+        <li><a href="#RAD">RAD Model</a></li>
+        <li><a href="#Spiral">Spiral Model</a></li>
+        <li><a href="#Incremental">Incremental</a></li>     
+        <li><a href="#Iterative">Iterative Model</a></li>     
+       </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>Software Engineering Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#Software">Software Engineering</a></li>
+        <li><a href="#SDLC">SDLC</a></li>
+        <li><a href="#Waterfall">Waterfall Model</a></li>
+        <li><a href="#RAD">RAD Model</a></li>
+        <li><a href="#Spiral">Spiral Model</a></li>
+        <li><a href="#Incremental">Incremental Model</a></li>     
+        <li><a href="#Iterative">Iterative Model</a></li>     
+      </ul><br>
+    </div>
+    <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="Software"> 
+   <h2>Software Engineering</h2>
+<p>Software is more than just a program code. A program is an executable code, which serves some computational purpose. 
+Software is considered to be collection of executable programming code.
+Software, when made for a specific requirement is called <strong>software product. </strong>
+</p>
+<p><strong>Engineering</strong> on the other hand, is all about developing products, using well-defined,
+ scientific principles and methods. </p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\SE_product.png" width="60%" align="center">
+<p><strong>Software engineering</strong> is associated with development of software product using well-defined scientific
+ principles, methods and procedures. The outcome of software engineering is an efficient and reliable software product.</p>
+<h4><strong>Definition by IEEE</strong></h4>
+<p>The application of a systematic,disciplined,quantifiable approach to the development,operation and maintenance of software;
+that is, the application of engineering to software.</p>
+</section>
+<hr>
+<section id="SDLC">
+<h2>Software Development Life Cycle</h2> 
+<p>The Software Development Lifecycle is a systematic process for building software that ensures the quality and correctness of the software built.
+ SDLC process aims to produce high-quality software which meets customer expectations.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\SDLC.png" width="50%" align="center">
+<h4><strong>Stage1: Planning and requirement analysis</strong></h4>
+<p>It is performed by the seniors of the team. They work on the inputs from the customers, market surveys of the industry. 
+Then senior members conduct the feasibility study in the economical, operational and technical areas.</p>
+<h4><strong>Stage2: Defining Requirements</strong></h4>
+<p>In this phase, the team clearly explain and document the project requirements and get them approved from the customer and market surveys.
+ The whole process finished through SRS( Software Requirement Specification).</p>
+<h4><strong>Stage3: Designing the Architect</strong></h4>
+<p>The next phase is about to bring down all the knowledge of requirements, analysis and design of the software project.
+ This phase is the product of the last two phases like inputs from the customer and requirement gathering.</p>
+<h4><strong>Stage4: Developing the project</strong></h4>
+<p>The actual development starts in this phase of SDLC. The implementation of design begins concerning writing code.
+ High-level languages such a C, C++, Pascal, Java and PHP used for coding.</p>
+<h4><strong>Stage5: Testing</strong></h4>
+<p>The testers purpose to search defects within the system as well as verifying whether the application performs
+ as expected and according to what documented in the requirements analysis phase.</p>
+<p>This cycle repeated until all the requirements tested and all the defects have fixed, and the software is ready to be shipped.</p>
+<h4><strong>Stage6: Deployment and Maintenance</strong></h4>
+<p>When the software tested, and no issues or error remain in the software, 
+it is time to deploy to production where the customer can use the software.</p>
+<p> There is usually a maintenance team that looks after any post-production problems.</p>
+</section>
+      <hr>
+<section id="Waterfall">
+
+      <h2>Waterfall Model</h2>
+
+<p>Waterfall model referred to as a linear-sequential model. In this model, the software
+ development activity classified into different phases, it is compulsory for a phase to completed before the next phase starts.
+ In short, there is no overlapping in the Waterfall model.</p>
+
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Waterfall-model.png" width="55%" align="center"> 
+<h4><strong>1. Requirement (Software Requirement Specification)</strong></h4>
+<p>Requirement Specification is an essential phase of the waterfall model. In this phase,
+ all the project team along with the customer prepare the list of user requirements.
+ The document that holds all the data is known as SRS.</p>
+<h4><strong>2. Design </strong></h4>
+<p>The design is an important stage that relies on the early stage for its proper implementation.
+ The appropriate design in this stage ensures an execution in the next phase.</p>
+<h4><strong>3. Implementation </strong></h4>
+<p>In the coding phase, based on the algorithm or flowchart the actual coding of the software is given out. That is the 
+stage where the idea and flowchart of the application physically created or materialized.</p>
+<p>In this phase, systems are developed in programmes called unit and these units are integrated into the next stage.</p>
+<h4><strong>4. Verification </strong></h4>
+<p>If there are any defects, the software development process must move back to the design phase. 
+In the design phase, changes implemented and then the following stages of coding and testing are again carried out.</p>
+<h4><strong>5. Maintenance </strong></h4>
+<p>When the software product delivered to the customer, then some problems come up in the customer environment.
+ Those problems fixed in this phase.</p>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" id="btn1" > Read More </button>
+<div id="demo" class="collapse" >
+<h4><strong>Advantages of SDLC</strong></h4>
+<p>1. This model is simple to implement also the number of resources that are required for it is minimal.</p>
+<p>2. The start and end points for each phase is fixed, which makes it easy to cover progress.</p>
+<p>3. It gives easy to control and clarity for the customer due to a strict reporting system.</p>
+<h4><strong>Disadvantages of SDLC</strong></h4>
+<p>1. The risk factor is higher, so this model is not good for more significant and complex projects.</p>
+<p>2. This model cannot accept the changes in requirements during development.</p>
+<p>3. It becomes tough to go back to the phase.</p>
+</div>
+</section>
+<hr>
+
+<section id="RAD">
+<h2>RAD Model </h2>
+
+<p>The larger projects divided into a series of smaller projects.
+ The primary features of RAD model are the reuse of templates, tools, processes, and code.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\RAD.png" width="60%" align="center">
+<h4><strong>1. Business Modelling</strong></h4>
+<p>This phase takes information which is gathered through several business-related sources.
+ The analyst takes all the accurate info from the corporate.</p>
+<h4><strong>2. Data Modelling </strong></h4>
+<p>All the information is analyzed which was collected during the Business Modelling phase.
+ By the analysis, the information arranged into different groups that can be beneficial for the business. 
+The quality of every group of data is carefully examined and provided a precise description.</p>
+<h4><strong>3. Process Modelling </strong></h4>
+<p>The Process Modelling phase is the step where all the groups of information gathered throughout 
+the Data Modelling step and changed into the required valuable information.</p>
+<h4><strong>4. Application Generation </strong></h4>
+<p>all the information which we gathered is coded, and the system is built, which is going to be utilized to create the prototype.</p>
+<h4><strong>5. Testing & Turnover</strong></h4>
+<p>In this phase, every prototype individually tested so that components
+ can quickly be recognized and shifted to develop the most potent product.</p>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo1" id="btn2" > Read More </button>
+<div id="demo1" class="collapse" >
+<h4><strong>Advantages of RAD</strong></h4>
+<p>1. This model is flexible for change.</p>
+<p>2. Each phase in RAD brings highest priority functionality to the customer.</p>
+<p>3. It reduced development time.</p>
+<h4><strong>Disadvantages of RAD</strong></h4>
+<p>1. It required highly skilled designers.</p>
+<p>2. All application is not compatible with RAD.</p>
+<p>3. For smaller projects, we cannot use the RAD model.</p>
+</div>
+</section>
+<hr>
+<section id="Spiral">
+<h2>Spiral Model</h2>
+<p>The Spiral Model is one of the most essential Software Development Life Cycle models,
+Every loop of the spiral is known as Phase of the software development process. The exact number of phases required to
+ develop the product can change by the project manager depending upon the project risks.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Spiral-Model.png" width="60%" align="center">
+<p><strong>The various phases of Spiral model are as follows:</strong></p>
+<h4><strong>1. Planning</strong></h4>
+<p> In this phase, classifying of the system requirements and unit requirements are done. 
+By continuing communication between the customer and the analyst.</p>
+<h4><strong>2. Design </strong></h4>
+<p>The design phase starts from the base and includes the architectural, logical design of modules,
+ physical product design and final design in a continuous spiral.</p>
+<h4><strong>3. Construct or build</strong></h4>
+<p> In every spiral, construct refers to the development of the final software product. In the spiral, when the product just imagined 
+and the design is developed, a Proof of Concept is developed to get the user's feedback.</p>
+<h4><strong>4. Evaluation and Risk analysis</strong></h4>
+<p>The risk analysis phase includes  estimating and observing technical feasibility. When testing the build, at the starting of the first creation, 
+the user evaluates the software and provides feedback. 
+Based on the client assessment , the method of repetition in the spiral model runs with the software throughout life.</p>
+
+
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo2" id="btn3" > Read More </button>
+<div id="demo2" class="collapse" >
+<h4><strong>Advantages of Spiral Model</strong></h4>
+<p>1. Highly flexible Model.</p>
+<p>2. Focus on Documentation Control.</p>
+<p>3. Fast and cost-effective development.</p>
+<h4><strong>Disadvantages of Spiral Model</strong></h4>
+<p>1. Not a perfect fit for less or low-risk projects.</p>
+<p>2. Success may depend hugely on the risk analysis.</p>
+<p>3. Can be expensive to implement.</p>
+</div>
+</section>
+
+<hr>
+<section id="Incremental">
+<h2>Incremental Model</h2>
+<p>Incremental Model is a process of software development where requirements 
+divided into multiple standalone modules of the software development cycle.
+Every subsequent release of the module adds function to the previous release.
+ The process continues until the complete system achieved.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Incremental-model.png" width="60%" align="center">
+<p><strong>The various phases of incremental model are as follows:</strong></p>
+<h4><strong>1. Requirement analysis</strong></h4>
+<p>The product analysis expertise identifies the requirements. And the system functional requirements 
+are understood by the requirement analysis team.</p>
+<h4><strong>2. Design & Development </strong></h4>
+<p>the design of the system functionality and the development method are finished with success. When software 
+develops new practicality, the incremental model uses style and development phase.</p>
+<h4><strong>3. Testing </strong></h4>
+<p>The testing phase checks the performance of each existing function as well as additional functionality.
+  The various method is used to test the behaviour of each task.</p>
+<h4><strong>4. Implementation </strong></h4>
+<p>Implementation phase enables the coding phase of the development system. It involves the final coding that design in the designing and development phase and tests the functionality 
+in the testing phase.</p>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo3" id="btn4" > Read More </button>
+<div id="demo3" class="collapse" >
+<h4><strong>Advantage of Incremental Model:</strong></h4>
+<p>1. Errors are easy to be recognized.</p>
+<p>2. Easier to test and debug</p>
+<p>3. The Client gets important functionality early.</p>
+<h4><strong>Disadvantage of Incremental Model:</strong></h4>
+<p>1. Need for good planning.</p>
+<p>2. Total Cost is high.</p>
+<p>3. Well defined module interfaces are needed.</p>
+
+</div>
+</section>
+<hr>
+
+<section id="Iterative">
+<h2>Iterative Model</h2>
+<p>In this Model, you can start with some of the software specifications and develop the first version of the software. After the first version if there is a need 
+to change the software, then a new version of the software is created with a new iteration. </p>
+
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Iterative-model.png" width="60%" align="center">
+<h4><strong>1. Requirement gathering & analysis </strong></h4>
+<p>Requirements are gathered from customers and check by an analyst whether requirements will fulfil or not.
+ Analyst checks that need will achieve within budget or not.</p>
+<h4><strong>2. Design</strong></h4>
+<p>Team design the software by the different diagrams like Data Flow diagram, 
+activity diagram, class diagram, state transition diagram, etc.</p>
+<h4><strong>3.  Implementation</strong></h4>
+<p>Requirements are written in the coding language and transformed into computer programmes which are called Software.</p>
+<h4><strong>4. Testing</strong></h4>
+<p>After completing the coding phase, software testing starts using different test methods. There are many test methods,
+ but the most common are white box, black box, and grey box test methods.</p>
+<h4><strong>5. Deployment</strong></h4>
+<p>After completing all the phases, software is deployed to its work environment.</p>
+<h4><strong>6. Review</strong></h4>
+<p>After the product deployment, review phase is performed to check the behaviour and validity of the developed product.</p>
+<h4><strong>7. Maintenance</strong></h4>
+<p>After deployment of the software in the working environment there may be some bugs, some errors or new updates are required.</p>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo4" id="btn5" > Read More </button>
+<div id="demo4" class="collapse" >
+<h4></strong>Advantage of Iterative Model:</strong></h4>
+<p>1. Testing and debugging during smaller iteration is easy.</p>
+<p>2. It is easily acceptable to ever-changing needs of the project.</p>
+<p>3. Risks are identified and resolved during iteration.</p>
+<h4></strong>Disadvantage of Iterative Model:</strong></h4>
+<p>1. It is not suitable for smaller projects.</p>
+<p>2. More Resources may be required.</p>
+<p>3. Requirement changes can cause over budget.</p>
+
+</div>
+</section>
+<hr>
+
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

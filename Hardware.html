@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hardware Installation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+
+.header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 5660px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+<div class="header">
+<nab>
+                                         
+                                             <ul>
+                                                    <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                                              <li> <a href="SoftwareEngineering.html" class="current">Next <i class="fa fa-hand-o-right"></i></a> </li>  </ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">Hardware Installation & Maintainance</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#SMPS">SMPS</a></li>
+        <li><a href="#Modem">Modem</a></li>
+        <li><a href="#BIOS">BIOS</a></li>
+        <li><a href="#Form">Motherboard Form Factor</a></li>
+        <li><a href="#Bus">Types of Buses</a></li>
+        <li><a href="#Expansion">Expansion Card</a></li>     
+       </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>Hardware Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#SMPS">SMPS</a></li>
+        <li><a href="#Modem">Modem</a></li>
+        <li><a href="#BIOS">BIOS</a></li>
+        <li><a href="#Form">Motherboard Form Factor</a></li>
+        <li><a href="#Bus">Types of Buses</a></li>
+        <li><a href="#Expansion">Expansion Card</a></li>         
+      </ul><br>
+    </div>
+    <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="SMPS"> 
+   <h2>Switched-Mode Power Supply </h2>
+<p>A switched-mode power supply (SMPS) is an electronic circuit that converts power using switching devices that are turned on and off at high frequencies, 
+and storage components such as inductors or capacitors to supply power when the switching device is in its non-conduction state.
+</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\SMPS.png" width="60%" align="center">
+<p>Switched-mode power supplies are classified according to the type of input and output voltages. 
+The four major categories are:</p>
+<ul>
+<li>AC to DC</li>
+<li>DC to DC</li>
+<li>DC to AC</li>
+<li>AC to AC</li>
+</ul>
+<h4><strong>SMPS Advantages :- </strong></h4>
+<p><strong>High efficiency : </strong>The switching action means the series regulator element is either on or off and 
+therefore little energy is dissipated as heat and very high efficiency levels can be achieved.</p>
+<p><strong>Compact : </strong>As a result of the high efficiency and low levels of heat dissipation,
+ the switch mode power supplies can be made more compact.</p>
+<p><strong>Costs : </strong>One of the points that makes switch mode power supplies very attractive is the cost. </p>
+<h4><strong>SMPS Disadvantages :- </strong></h4>
+<p><strong>Noise : </strong> The transient spikes that occur from the switching action on switch mode
+ power supplies are one of the largest problems.</p>
+<p><strong>External components : </strong>While it is possible to design a switch mode regulator using a
+ single integrated circuit, external components are typically required.</p>
+<p><strong>Filtering : </strong>Careful consideration of the filtering for an SMPS because poor design 
+can lead to high levels of noise and spikes on the output.</p>
+
+</section>
+<hr>
+<section id="Modem">
+<h2>Modem</h2> 
+<p>Modem is a device that enables a computer to send or receive data over telephone or cable lines. The data stored on the 
+computer is digital whereas a telephone line or cable wire can transmit only analog data.</p>
+<p>The main function of the modem is to convert digital signal into analog and vice versa. </p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Signal.png" width="60%" align="center">
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Modem.png" width="60%" align="center">
+
+<p>Modem is a combination of two devices  modulator and demodulator. </p>
+<p>The modulator converts digital data into analog data when the data is being sent by the computer.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Mo-De.png" width="75%" align="center">
+<p> The demodulator converts analog data signals into digital data when it is being received by the computer.</p>
+<h3>Types of Modem</h3>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Modem-T.png" width="70%" align="center">
+<p><strong>Simplex : </strong>A simplex modem can transfer data in only one direction, from digital device to network
+ (modulator) or network to digital device (demodulator).</p>
+<p><strong>Half-Simplex : </strong>A half-duplex modem has the capacity to transfer
+ data in both the directions but only one at a time.</p>
+<p><strong>Full duplex : </strong>A full duplex modem can transmit data in both the directions simultaneously.</p>
+</section>
+      <hr>
+
+
+<section id="BIOS">
+
+      <h2>BIOS</h2>
+
+<p>Basic Input/Output System, the BIOS (pronounced bye-oss) is a ROM chip found on motherboards 
+that allows you to access and set up your computer system at the most basic level.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\BIOS.jpg" width="75%" align="center"> 
+<p>The BIOS includes instructions on how to load basic computer hardware. It also includes a test referred to as a POST (Power-On Self-Test)
+ that helps verify the computer meets requirements to boot up properly. </p>
+<p>If the computer does not pass the POST, you will receive a combination of beeps indicating what is malfunctioning in the computer.</p>
+<h3>The four main functions of a PC BIOS</h3>
+<p><strong>POST : </strong>Test the computer hardware and make sure no errors exist before loading the operating system.</p>
+<p><strong>Bootstrap Loader : </strong>Locate the operating system. If a capable operating system is located, 
+the BIOS will pass control to it.</p>
+<p><strong>BIOS drivers : </strong>Low-level drivers that give the computer basic operational 
+control over your computer's hardware.</p>
+<p><strong>BIOS or CMOS Setup </strong>
+Configuration program that allows you to configure hardware settings including system 
+settings such as computer passwords, time, and date.</p>
+<h4><strong>To facilitate and accelerate reporting </strong></h4>
+<p>Often, applications need to provide a lot of analytical and statistical information.</p>
+<h4><strong>Storing derivable data</strong></h4>
+<p>If you need to execute a calculation repeatedly during queries, it's best to store the results of it. </p>
+</section>
+<hr>
+
+<section id="Form">
+<h2>Motherboard form factors</h2>
+
+<p>Form factors such as physical size, shape, component placement, power supply connectors etc.</p>
+<p>Various form factors of motherboards are AT, Baby AT, ATX, Mini-ATX, Micro-ATX, Flex ATX, LPX and Mini LPX and NLX.</p> 
+
+<h4><strong>AT (Advanced Technology) </strong></h4>
+<p>1. Oldest and biggest form factor and popular until Baby AT.</p>
+<p>2. Capable of using 386 processor.</p>
+<p>12' inch size and was difficult to install, service and upgrade.</p>
+<h4><strong>Baby AT</strong></h4>
+<p>1. Standard in computer industries and still being used in Pentium class products.</p>
+<p>2. CPU socket is placed in such a way that it can interfere with longer bus cards.</p>
+<p>3. I/O ports are connected to pin-outs near the floppy drive which results in jumbling of ribbon cables.</p>
+<h4><strong>ATX (Advanced Technology Extended)</strong></h4>
+<p>1. New mounting configuration for power supply.</p>
+<p>2. Processor relocated away from expansion slots to allow full length add-in cards.</p>
+<p>3. Provides air-flow through chassis and across the processor.</p>
+<h4><strong>Mini ATX</strong></h4>
+<p>1. Commonly same as ATX</p>
+<p>2. Just change in size from ATX= 12" x 9.6" to Mini ATX= 11.2" x 8.2".</p>
+<h4><strong>Micro ATX</strong></h4>
+<p>1. AGP (Accelerated graphics port) to have high performance graphics.</p>
+<p>2. Smaller in size and less power supply.</p>
+<h4><strong>Flex AT</strong></h4>
+<p>1. A subset of micro ATX.</p>
+<p>2. Small motherboard size and supports current processor technology.</p>
+<h4><strong>LPX (Low Profile Extension) and Mini LPX</strong></h4>
+<p>1. Based on design by western digital.</p>
+<p>2. High quality product at low cost but makes difficult to upgrade and repair.</p>
+<h4><strong>NLX (New Low Profile Extended)</strong></h4>
+<p>1. Supports current and future processor technologies.</p>
+<p>2. Also supports new AGP and tall memory technology.</p>
+</section>
+<hr>
+<section id="Bus">
+<h2>Types of Buses</h2>
+<h4><strong>Data Bus</strong></h4>
+<p>1. Is a path that connects the CPU, memory and other devices on the motherboard.</p>
+<p>2. The number of bit processor determines the value of data bus i.e. 32-bit processor has 32-bit data bus.</p>
+<h4><strong>Address Bus</strong></h4>
+<p>1. Connection is between CPU and RAM and carries memory address instead of data.</p>
+<p>2. Number of address bus lines determines maximum number of memory address.</p>
+<h3>Bus has four communication standard</h3>
+<h4><strong>ISA (Industry Standard Architecture)</strong></h4>
+<p>1. Transfer 16 bit at a time with 98 slots black in color.</p>
+<p>2. 8 bit or 16 bit wide.</p>
+<h4><strong>EISA (Extended ISA)</strong></h4>
+<p>1. ISA cards works on EISA slots and supports plug and play.</p>
+<p>2. Transfers 32 bit of data at a time.</p>
+<h4><strong>PCI (Peripheral Component Interconnection)</strong></h4>
+<p>1. Can transfer 32 or 64 bit data at a time.</p>
+<p>2. Speed up to 38-48 MHz with 120 slots.</p>
+<h4><strong>USB ( Universal Serial Bus</strong></h4>
+<p>1. Speed varies between 12 MBPS to 4.3 GBPS depending on version 1.0, 2.0, 3.0.</p>
+<p>2. Supports plug and play, hot plugging etc.</p>
+</section>
+
+<hr>
+<section id="Expansion">
+<h2>Types of Expansion Card</h2>
+<h4><strong>Graphics cards</strong></h4>
+<p>1. Used to enhance graphics for 2D or 3D applications such as games, movies etc.</p>
+<h4><strong>Sound cards</strong></h4>
+<p>1. Manages input and output sounds.</p>
+<p>2. Consists of digital to analog, analog to digital convertor and digital signal processor.</p>
+<h4><strong>Modem cards</strong></h4>
+<p>1. Consists of modulator and demodulator to convert incoming and outgoing signals.</p>
+<p>2. Today's PC's have in-built modem.</p>
+<h4><strong>PC cards</strong></h4>
+<p>1. Best source of internet and size of the card is equal to the credit card.</p>
+<p>2. Can also be used to increase memory.</p>
+</section>
+<hr>
+
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+       
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+       
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Database Management System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+
+ .header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 8770px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<nab>
+                                         
+                                             <ul>
+                                                    <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                                                   <li> <a href="JavaProgramming.html" class="current">Next <i class="fa fa-hand-o-right"></i></a> </li></ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">Database Management System</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#DBMS">DBMS</a></li>
+        <li><a href="#Types of DBMS">Types of DBMS</a></li>
+        <li><a href="#Architecture">DBMS Architecture</a></li>
+        <li><a href="#Data Independence">Data Independence</a></li>
+        <li><a href="#E-R"> E-R Diagram</a></li>
+        <li><a href="#DML">DML,DDL,DCL</a></li>     
+        <li><a href="#Statement">SQL Statement</a></li>     
+        <li><a href="#Keys">Keys</a></li>     
+       </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>Database Management System Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#DBMS">DBMS</a></li>
+        <li><a href="#Types of DBMS">Types of DBMS</a></li>
+        <li><a href="#Architecture">DBMS Architecture</a></li>
+        <li><a href="#Data Independence">Data Independence</a></li>
+        <li><a href="#E-R"> E-R Diagram</a></li>
+        <li><a href="#DML">DML,DDL,DCL</a></li>     
+        <li><a href="#Statement">SQL Statement</a></li>     
+        <li><a href="#Keys">Keys</a></li>     
+      </ul><br>
+    </div>
+    <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="DBMS"> 
+   <h1>DBMS</h1>
+      <p>A database management system (DBMS) is system software  that  meant  for storing records in  computers.
+   This software allows accessing of data such as delete ,store ,retrieve etc.
+That are available in a data base , its works between end user and application program.
+</p>
+<h3>Characteristics of Database Management System</h3>
+<p><strong>Data stored into Tables: </strong>Data is never directly stored into the database. 
+Data is stored into tables, created inside the database.<p>
+<p><strong>Data Consistency: </strong>Data that is being continuosly updated and added, 
+maintaining the consistency of data can become a challenge.<p>
+<p><strong>Security:</strong>The DBMS also takes care of the security of data, protecting the data from un-authorised access. I<p>
+<p><strong>Query Language: </strong>DBMS provides users with a simple Query language, 
+using which data can be easily fetched, inserted, deleted and updated in a database.<p>
+<h3>Advantages of DBMS</h3> 
+<p>1. In DBMS the redundancy problem can be solved</p>
+<p>2. Has a very high security level</p>
+<p>3. Independency of data</p>
+<p>4. Control on concurrency</p>
+<h4>Disadvantages</h4>
+<p>1. Size becomes an issue because in some databases have large size.</p>
+<p>2. Performance may not run as fast as desired.</p>
+<p>3. The requirement of the additional hardware increases cost.</p>
+<p>4. Also have the cost of conversion.</p>
+</section>
+      <hr>
+<section id="Types of DBMS">
+
+      <h2>Types of DBMS</h2>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\types of dbms.png" width="85%" align="center">
+<p>There are several types of database management systems</p>
+<ul>
+<li>Hierarchical databases</li>
+<li>Network databases</li>
+<li>Relational databases</li>
+<li>Object-oriented databases</li>
+</ul>
+<h3>Hierarchical DBMS</h3>
+<p>In a Hierarchical database, model data is organized in a tree-like structure. 
+ Data is represented using a parent-child relationship.
+In Hierarchical DBMS parent may have many children, but children have only one parent.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\tressDBMS.png" width="55%" align="center">
+<h3>Network Model</h3>
+<p>The network database model allows each child to have multiple parents. It helps you to address the need to
+ model more complex relationships like as the orders/parts many-to-many relationship.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\network dbms.jpg" width="40%" align="center">
+<h3>Relational model</h3>
+<p>Relational DBMS is the most widely used DBMS model because it is one of the easiest. 
+This model is based on normalizing data in the rows and columns of the tables. 
+Relational model stored in fixed structures and manipulated using SQL.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\relationalDBMS.png" width="50%" align="center">
+<h3>Object-Oriented Model</h3>
+<p>In Object-oriented Model data stored in the form of objects. The structure which is called classes which display data within it. It defines a 
+database as a collection of objects which stores both data members values and operations.</p>
+</section>
+<hr>
+
+<section id="Architecture">
+<h2>DBMS Architecture</h2>
+
+<p><strong>Following are the three levels of database architecture :</strong></p> 
+<ul>
+<li>Physical Level</li>
+<li>Conceptual Level</li>
+<li>External Level</li>
+</ul>
+<br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\levelarchitecture.png" width="60%" align="center"><br>
+<h4><strong>Physical Level</strong></h4>
+<p>1. Physical level describes the physical storage structure of data in database.</p>
+<p>2. This level is very close to physical storage of data.</p>
+<p>3. At lowest level, it is stored in the form of bits with the physical addresses on the secondary storage device</p>
+<p>4. The internal schema defines the various stored data types. It uses a physical data model.</p>
+<h4><strong>Conceptual Level</strong></h4>
+<p>1. Conceptual level describes the structure of the whole database for a group of users.</p>
+<p>2. Conceptual schema is a representation of the entire content of the database.</p>
+<p>3. These schema contains all the information to build relevant external records.</p>
+<p>4. It hides the internal details of physical storage.</p>
+<h4><strong>External Level</strong></h4>
+<p>1. External level is related to the data which is viewed by individual end users.</p>
+<p>2. This level includes a no. of user views or external schemas.</p>
+<p>3. This level is closest to the user.</p>
+<p>4. External view describes the segment of the database that is required
+ for a particular user group and hides the rest of the database from that user group.</p>
+
+</section>
+<hr>
+<section id="Data Independence">
+<h2>Data Independence</h2>
+<p>Data independence can be explained using the three-schema architecture.</p>
+<p>Data independence refers characteristic of being able to modify the schema
+ at one level of the database system without altering the schema at the next higher level.</p>
+<h3>Logical Data Independence</h3>
+<p>1. Logical data independence refers characteristic of being able to 
+change the conceptual schema without having to change the external schema.</p>
+<p>2. Logical data independence is used to separate the external level from the conceptual view.</p>
+<p>3. If we do any changes in the conceptual view of the data, then the user view of the data would not be affected.</p>
+<h3>Physical Data Independence</h3>
+<p>1. Physical data independence can be defined as the capacity to
+ change the internal schema without having to change the conceptual schema..</p>
+<p>2. If we do any changes in the storage size of the database system server,
+ then the Conceptual structure of the database will not be affected</p>
+<p>3. Physical data independence is used to separate conceptual levels from the internal levels.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\independenceDBMS.png" width="70%" align="center">
+</section>
+
+<hr>
+<section id="E-R">
+<h2>E-R Diagram</h2>
+<p><strong>Entity Set :- </strong>Entity set is a group of similar entities and these entities can have attributes. </p>
+<p><strong>Entity :- </strong>An entity is a table or attribute of a table in database, so by                      
+showing relationship among tables and their attributes.</p>
+<p><strong>E-R diagram :- </strong>An ER diagram shows the relationship among entity  sets.</p>
+<h3>A Simple Diagram :-  </h3>
+<p>In the following diagram we have two entities Student and their relationship. The relationship between Student  .
+Student entity has attributes such as Stu_Id, Stu_Name & Stu_Addr and age .
+</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\E-R.png" width="65%" align="center">
+<br>
+<h3>Components of a ER Diagram :-</h3>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\comER.png" width="65%" align="center">
+<br>
+<p>As shown in the above diagram, an ER diagram has three main components:-</p>
+<ul>
+<li>Entity</li>
+<li>Attribute</li>
+<li>Relationship</li>
+</ul>
+</section>
+<hr>
+<section id="DML">
+<h3>DML</h3>
+<p><strong>Data Manipulation Language (DML)</strong>statements are used for managing data within schema objects DML deals
+ with data manipulation, and therefore includes most common <strong>SQL</strong> statements such <strong>SELECT</strong>
+,<strong>INSERT</strong>, etc.</p>
+<p>DML allows to add / modify / delete data itself.
+DML is used to manipulate with the existing data in the database objects (insert, select, update, delete).</p>
+<h3>DDL</h3>
+<p><strong>Data Definition Language (DDL)</strong> statements are used to define the database structure or schema.</p>
+<p>DDL includes commands such as <strong>CREATE, ALTER</strong> and<strong> DROP </strong>statements.
+DDL is used to <strong>CREATE, ALTER</strong> OR <strong>DROP</strong>
+ the database objects (Table, Views, Users).</p>
+<h3>DCL</h3>
+<p>DCL is used to <strong>grant / revoke</strong> permissions on databases and their contents.
+ DCL statement allow you to control who has access to specific object in your database.
+</p>
+<ul>
+<li>GRANT</li>
+<li>REVOKE</li>
+</ul>
+</section>
+<hr>
+<section id="Statement">
+<h3>SQL Select Statement</h3>
+<p>In SQL, the SELECT statement is used to query or retrieve data from a table in the database.
+ The returns data is stored in a table, and the result table is known as result-set.</p>
+<pre class="result notranslate">
+<strong>SELECT column1, column2, ...  
+FROM table_name; </strong>
+}  
+</pre>
+<p>Use the following syntax to select all the fields available in the table:</p>
+<pre class="result notranslate">
+<strong>SELECT  *  FROM table_name;</strong>  
+</pre>
+<h3>SQL INSERT Statement</h3>
+<p>The SQL INSERT statement is used to insert a single or multiple data in a table. In SQL, You can insert the data in two ways:</p>
+<ol>
+<li>Without specifying column name</li>
+<li>By specifying column name</li>
+</ol>
+<h3>1. Without specifying column name</h3>
+<p>If you want to specify all column values, you can specify or ignore the column values.</p>
+<h5><strong>Syntax</strong></h5>
+<pre class="result notranslate">
+<strong>INSERT INTO TABLE_NAME    
+VALUES (value1, value2, value 3, .... Value N);   </strong> 
+</pre>
+<h3>2. By specifying column name</h3>
+<p>To insert partial column values, you must have to specify the column names.</p>
+<h5><strong>Syntax</strong></h5>
+<pre class="result notranslate">
+<strong>INSERT INTO TABLE_NAME    
+[(col1, col2, col3,.... col N)]    
+VALUES (value1, value2, value 3, .... Value N);      </strong> 
+</pre>
+<h3>SQL Update Statement</h3>
+<p>The SQL UPDATE statement is used to modify the data that is already in the database.
+ The condition in the WHERE clause decides that which row is to be updated.</p>
+<h5><strong>syntax</strong></h5>
+<pre class="result notranslate">
+<strong>UPDATE table_name  
+SET column1 = value1, column2 = value2, ...  
+WHERE condition;</strong>  
+</pre>
+<h3>SQL DELETE Statement</h3>
+<p>The SQL DELETE statement is used to delete rows from a table. 
+Generally, DELETE statement removes one or more records form a table.</p>
+<h5><strong>Syntax</strong></h5>
+<pre class="result notranslate">
+<strong>DELETE FROM table_name WHERE some_condition;  </strong>
+</pre>
+</section>
+<hr>
+<section id="Keys">
+<h2>Keys</h2>
+<ul>
+<li>Keys play an important role in the relational database.</li>
+<li>It is used to uniquely identify any record or row of data from the table. 
+It is also used to establish and identify relationships between tables.</li>
+</ul>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\dbms-keys.png" width="55%" align="center">
+<br>
+<h3>Types of Keys</h3>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\keys-types.png" width="55%" align="center">
+<br>
+<h3>Primary Key</h3>
+<p>It is the first key which is used to identify one and only one instance of an entity uniquely. An entity can
+ contain multiple keys as we saw in PERSON table. The key which is most suitable from those lists become a primary key.</p>
+<p>For each entity, selection of the primary key is based on requirement and developers.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\primary-key.png" width="55%" align="center">
+<br><br>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" id="btn1" > Read More </button>
+<div id="demo" class="collapse" >
+
+<h3>Candidate Key</h3>
+<p>A candidate key is an attribute or set of an attribute which can uniquely identify a tuple.</p>
+<p>The remaining attributes except for primary key are considered as a candidate key. 
+The candidate keys are as strong as the primary key.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\candidate-key.png" width="55%" align="center">
+<h3>Super Key</h3>
+<p>Super key is a set of an attribute which can uniquely identify a tuple. Super key is a superset of a candidate key.</p>
+<p>The super key would be EMPLOYEE-ID, (EMPLOYEE_ID, EMPLOYEE-NAME), etc.</p>
+<h3>Foreign key</h3>
+<p>Foreign keys are the column of the table which is used to point to the primary key of another table.</p>
+<p>We add the primary key of the DEPARTMENT table, Department_Id as a new attribute in the EMPLOYEE table.</p>
+<p>Now in the EMPLOYEE table, Department_Id is the foreign key, and both the tables are related.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\foreign-key.png" width="55%" align="center">
+</div>
+</section>
+<hr>
+
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

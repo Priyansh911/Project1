@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Technology</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+
+ .header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 7300px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<nab>
+                                         
+                                             <ul>
+                                                    <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                                                   <li> <a href="Wireless.html" class="current">Next <i class="fa fa-hand-o-right"></i></a> </li></ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">Web Technology</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#Web">HTML</a></li>
+        <li><a href="#List">HTML Lists</a></li>
+        <li><a href="#Server">Web Server</a></li>
+        <li><a href="#CSS">CSS</a></li>
+        <li><a href="#Types">Types of CSS</a></li>
+        <li><a href="#Script">JavaScript</a></li>     
+        <li><a href="#DHTML">DHTML</a></li>     
+        <li><a href="#VS">HTML and XML</a></li>     
+       </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>Web Technology Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#Web">HTML</a></li>
+        <li><a href="#List">HTML Lists</a></li>
+        <li><a href="#Server">Web Server</a></li>
+        <li><a href="#CSS">CSS</a></li>
+        <li><a href="#Types">Types of CSS</a></li>
+        <li><a href="#Script">JavaScript</a></li>     
+        <li><a href="#DHTML">DHTML</a></li>     
+        <li><a href="#VS">HTML and XML</a></li>     
+      </ul><br>
+    </div>
+    <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="Web"> 
+   <h2>Web Page</h2>
+<p> Web pages are what make up the World Wide Web.
+ These documents are written in HTML (hypertext markup language) and are translated by your Web browser. 
+</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\WebPage.png" width="70%" align="center">
+<p>Web pages can either be static or dynamic.</p>
+<p><strong>Static :- </strong>Static pages show the same content each time they are viewed. </p>
+<p><strong>Dynamic :- </strong>Pages have content that can change each time they are accessed.</p>
+<h2>HTML</h2>
+<p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.</p>
+<ul>
+<li>Hypertext refers to the way in which Web pages (HTML documents) are linked together.
+ Thus, the link available on a webpage is called Hypertext.</li>
+<li>HTML is a Markup Language which means you use HTML to simply "mark-up" a text document 
+with tags that tell a Web browser how to structure it to display.</li>
+</ul>
+<p>HTML was developed  to define the structure of documents like headings, paragraphs, lists, 
+and so forth to facilitate the sharing of scientific information between researchers.</p>
+<h3>Basic HTML Document</h3>
+
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Web page title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Write Your First Heading&lt;/h1&gt;
+&lt;p&gt;Write Your First Paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<strong>Output :- </strong>
+<pre class="prettyprint notranslate">
+
+<h1>Write Your First Heading</h1>
+      <p>Write Your First Paragraph</p>
+</pre>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" id="btn1" > Read More </button>
+<div id="demo" class="collapse" >
+<h3>HTML Tages</h3>
+<p><strong>&lt;HTML&gt; = </strong>  This tag encloses the complete HTML document and 
+mainly comprises of document header which is represented by<strong> &lt;head&gt;...&lt;/head&gt;</strong></p>
+<p><strong>&lt;HEAD&gt; = </strong>  This tag represents the document's header which can keep other HTML tags like
+<strong> &lt;title&gt;...&lt;link&gt;</strong> etc.</p>
+<p><strong>&lt;TITLE&gt; = </strong> The &lt;title&gt; tag is used inside the &lt;head&gt; tag to mention the document title.</p>
+<p><strong>&lt;BODY&gt; = </strong> This tag represents the document's body which keeps other HTML tags like
+&lt;h1&gt; ,&lt;div&gt;,&lt; p&gt;tag to mention the document title.</p>
+<p><strong>&lt;H1&gt; = </strong>This tag represents the heading.</p>
+<p><strong>&lt;p&gt; = </strong>This tag represents the paragragh.</p>
+</div>
+</section>
+<hr>
+<section id="List">
+<h2>HTML Lists</h2> 
+<p>HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. 
+Lists may contain :-</p>
+<ul>
+<li><strong> &lt;ul&gt; :-</strong> An unordered list. This will list items using plain bullets. </li>
+<li><strong> &lt;ol&gt; :- </strong>An ordered list. This will use different schemes of numbers to list your items.</li>
+<li><strong> &lt;dl&gt; :- </strong>A definition list. This arranges your items in the same way as they are arranged in a dictionary.</li>
+</ul>
+<h3>HTML Unordered List</h3>
+<p>An unordered list is a collection of related items that have no special order or sequence.
+ This list is created by using HTML &lt;ul&gt; tag.</p>
+<strong>Example</strong>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML Unordered List &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;ul&gt;
+&lt;li&gt; Beetroot  &lt;/li&gt;
+&lt;li&gt; Ginger  &lt;/li&gt;
+&lt;li&gt; Potato  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<strong>Output</strong>
+<pre class="prettyprint notranslate">
+<ul><li>Beetroot</li><li>Ginger </li><li>Potato</li></ul></pre>
+<h3>HTML Ordered Lists</h3>
+<p>If you are required to put your items in a numbered list instead of bulleted, then HTML ordered list will be used.
+ This list is created by using &lt;ol&gt; tag.</p>
+<strong>Example</strong>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML Ordered List &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;ol&gt;
+&lt;li&gt; Beetroot  &lt;/li&gt;
+&lt;li&gt; Ginger  &lt;/li&gt;
+&lt;li&gt; Potato  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<strong>Output</strong>
+<pre class="prettyprint notranslate">
+<ol><li>Beetroot</li><li>Ginger </li><li>Potato</li></ol></pre>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo1" id="btn2" > Read More </button>
+<div id="demo1" class="collapse" >
+<h3>HTML Ordered Lists</h3>
+<p>HTML and XHTML supports a list style which is called definition lists where entries are listed like
+ in a dictionary or encyclopedia.</p>
+<ul>
+<li><strong> &lt;dl&gt;   :- </strong>Defines the start of the list</li>
+<li><strong> &lt;dt&gt;   :- </strong>A term</li>
+<li><strong> &lt;dd&gt;  :- </strong>Term definition</li>
+</ul>
+
+<strong>Example</strong>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML Ordered List &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;dl&gt;
+&lt;dt&gt; HTML  &lt;/dt&gt;
+&lt;dd&gt; This stands for Hyper Text Markup Language &lt;/dd&gt;
+&lt;dt&gt; HTTP  &lt;/dt&gt;
+&lt;dd&gt; This stands for Hyper Text Transfer Protocol  &lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<strong>Output</strong>
+<pre class="prettyprint notranslate">
+<dl><dt>HTML</dt><dd> This stands for Hyper Text Markup Language </dd><dt>HTTP</dt><dd>This stands for Hyper Text Transfer Protocol</dd></dl></pre>
+</div>
+</section>
+      <hr>
+<section id="Server">
+
+      <h2>Web Server</h2>
+
+<p>1. A Web server is a program that uses HTTP (Hypertext Transfer Protocol) to serve the files that form
+ Web pages to users, in response to their requests, which are forwarded by their computers' HTTP clients.</p>
+<p>2 .Dedicated computers and appliances may be referred to as Web servers as well.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\server.png" width="65%" align="center"> 
+<p>3. Web servers often come as part of a larger package of Internet- and intranet-related programs for serving email, 
+downloading requests for File Transfer Protocol (FTP) files.</p>
+
+</section>
+<hr>
+
+<section id="CSS">
+<h2>Cascading Style Sheet </h2>
+
+<p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts.
+ It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. </p>
+<p>CSS is independent of HTML and can be used with any XML-based markup language.</p> 
+<p>The major points of CSS are given below:</p>
+<ul>
+<li>CSS stands for Cascading Style Sheet.</li>
+<li>CSS is used to design HTML tags.</li>
+<li>CSS is a widely used language on the web.</li>
+<li>HTML, CSS and JavaScript are used for web designing. It helps the web designers to apply style on HTML tags.</li>
+</ul>
+<strong>CSS Example</strong>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1{
+color:white;
+background-color:red;
+padding:5px;
+}
+p{
+color:blue;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Write Your First CSS Example&lt;/h1&gt;
+&lt;p&gt;This is Paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</section>
+<hr>
+<section id="Types">
+<h2>Types of CSS</h2>
+<p><strong>There are the following three types of CSS:</strong></p>
+<ul>
+<li>Inline CSS</li>
+<li>Internal CSS</li>
+<li>External CSS</li>
+</ul>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\TypesOfCss.png" width="65%" align="center">
+<h3><strong>Inline CSS</strong></h3>
+<p>For Inline CSS every style content is in HTML elements. It is used for a limited section.
+ Whenever our requirements are very small we can use inline CSS.</p>
+<strong>Syntax</strong>
+<pre class="prettyprint notranslate">
+<strong>&lt;htmltag style="cssproperty1:value; cssproperty2:value;&gt; &lt;/htmltag&gt;</strong>
+</pre>
+<strong>Example</strong>
+<pre class="prettyprint notranslate">
+<strong>&lt;h2 style="color:red;margin-left:40px;"&gt; Inline CSS is applied on this heading. &lt;/h2&gt;
+&lt;p&gt; This paragraph is not affected. &lt;p&gt;</strong>
+</pre><br>
+<h4>Disadvantages of Inline CSS</h4>
+<ul>
+<li>These styles cannot be reused anywhere else.</li>
+<li>These styles are tough to be edited because they are not stored at a single place.</li>
+<li>Inline CSS does not provide browser cache advantages.</li>
+</ul>
+<h3>Internal CSS</h3>
+<p>In internal CSS the style of CSS is specified in the <head> section. 
+This is internal CSS, it affects all the elements in the body section.<br> Internal CSS
+ can be used anywhere in particular HTML document. </p>
+<strong>Example</strong>
+<pre class="prettyprint notranslate">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {
+    background-color: grey;
+}
+h1 {
+    color: yellow;
+    margin-left: 80px;
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;The internal style sheet is applied on this heading.&lt;/h1&gt;
+&lt;p&gt;This paragraph will not be affected.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo2" id="btn3" > Read More </button>
+<div id="demo2" class="collapse" >
+
+<h3>External CSS </h3>
+<p>The external style sheet is generally used when you want to make changes on multiple pages. 
+It is ideal for this condition because it facilitates you to change the look of the entire web site by changing just one file.</p>
+<p>It uses the <link> tag on every pages and the <link> tag should be put inside the head section.</p>
+<p><strong>Linking Example</strong></p>
+<pre class="prettyprint notranslate">
+&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+&lt;/head&gt;
+</pre>
+<p>Let's take an example of a style sheet file named "index.css".</p>
+<pre class="prettyprint notranslate">
+body {  
+    background-color: lightblue;  
+}  
+h1 {  
+    color: navy;  
+    margin-left: 20px;  
+}   
+</pre>
+</div>
+</section>
+
+<hr>
+<section id="Script">
+<h2>JavaScript</h2>
+<p>JavaScript is used to create client-side dynamic pages.
+JavaScript is an object-based scripting language which is lightweight and cross-platform. </p>
+<p>JavaScript is not a compiled language, but it is a translated language. 
+The JavaScript Translator is responsible for translating the JavaScript code for the web browser.</p>
+<h3>Application of JavaScript</h3>
+<ul type="square">
+<li>Client-side validation.</li>
+<li>Dynamic drop-down menus.</li>
+<li>Displaying date and time.</li>
+<li>Displaying pop-up windows and dialog boxes . </li>
+</ul>
+<p><strong>JavaScript Example</strong></p>
+<pre class="prettyprint notranslate ">
+&lt;script&gt;  
+document.write("Hello JavaScript by JavaScript");  
+&lt;/script&gt;  
+</pre>
+</section>
+<hr>
+
+<section id="DHTML">
+<h2>DHTML</h2>
+<p>Dynamic HyerText Markup Language (DHTML) is a combination of
+ Web development technologies used to create dynamically changing websites. </p>
+<p> Web pages may include animation, dynamic menus and text effects. The technologies used include a combination of HTML.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\DHTML.png" width="60%" align="center">
+<h4>Features of DHTML:</h4>
+<p>1.  Simplest feature is making the page dynamic.</p>
+<p>2.  Can be used to create animations, games, applications, provide new ways of navigating through web sites.</p>
+<p>3.  DHTML use low-bandwidth effect which enhance web page functionality.</p>
+<p>4.  Facilitates the usage of events, methods and properties and code reuse.</p>
+</section>
+<hr>
+
+<section id="XML">
+<h3>XML</h3>
+<p>1. XML is developed by the World Wide Web Consortium (W3C),
+ which is used as a format to store and transfer data over the Web.</p>
+<p>2. XML is a markup language based on simple, platform-independent
+ rules for processing and displaying textual information in a structured way.</p>
+<p>3. XML was designed to carry data, not to display data.</p>
+<p>4. An XML document can be converted into another format, such as HTML and PDF, to make it more readable.</p>
+<p>XML has been used to implement the following various operations:-</p>
+<ul type="square">
+<li>Configuration information</li>
+<li>Electronic Data Interchange (EDI)</li>
+<li>Voicemail system</li>
+<li>Remote Method Invocation (RMI)</li>
+</ul>
+<strong>XML Example</strong>
+<p>employee.xml</p>
+<pre class="prettyprint notranslate">
+&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE employee SYSTEM "employee.dtd"&gt;
+&lt;employee&gt;
+  &lt;firstname&gt;vimal&lt;/firstname&gt;
+  &lt;lastname&gt;jaiswal&lt;/lastname&gt;
+  &lt;email&gt;vimal@javatpoint.com&lt;/email&gt;
+&lt;/employee&gt; 
+</pre>
+</section>
+<hr>
+<section id="VS">
+<h2>HTML v XML</h2>
+<h3>Similarities between XML and HTML</h3>
+<p>1. Both are originated from SGML. [Standard Generalized Markup Language]</p>
+<p>2. Both XML and HTML markups are used for responses either Direct or by AJAX.</p>
+<p>3. Both are markup languages of web.</p>
+<p>4. Tags are basic building blocks of both HTML and XML documents.</p>
+<h3>Difference between XML and HTML</h3>
+<p>1. HTML focuses on how data looks whereas XML focuses on what data is.</p>
+<p>2. HTML tags are predefined tags whereas XML tags are user defined tags.</p>
+<p>3. HTML tags are not case insensitive whereas XML tags are sensitive.</p>
+<p>4. In HTML not mandatory to close tag whereas in XML it is mandatory to close tag.</p>
+</section>
+<hr>
+
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

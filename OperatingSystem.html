@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Operating System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+
+ .header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 8800px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<nab>
+                                         
+                                             <ul>
+                                                    <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                                                   <li> <a href="DataStructure.html" class="current">Next <i class="fa fa-hand-o-right"></i></a> </li></ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">Operating System</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#Operating">Operating System</a></li>
+        <li><a href="#Types of OS">Types of Operating System</a></li>
+        <li><a href="#Process">Process Control Block</a></li>
+        <li><a href="#Dead Lock"> Dead Lock</a></li>
+        <li><a href="#Scheduling"> Process Scheduling</a></li>
+        <li><a href="#Paging">Paging</a></li>
+        <li><a href="#Segmentation">Segmentation</a></li>
+        <li><a href="#FCFS">FCFS Scheduling</a></li>
+        <li><a href="#SSTF">SSTF Scheduling</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>Operating System Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#Operating">Operating System</a></li>
+        <li><a href="#Types of OS">Types of Operating System</a></li>
+        <li><a href="#Process">Process Control Block</a></li>
+        <li><a href="#Dead Lock"> Dead Lock</a></li>
+        <li><a href="#Scheduling"> Process Scheduling</a></li>
+        <li><a href="#Paging">Paging</a></li>
+        <li><a href="#Segmentation">Segmentation</a></li>
+        <li><a href="#FCFS">FCFS Scheduling</a></li>
+        <li><a href="#SSTF">SSTF Scheduling</a></li>
+      </ul><br>
+    </div>
+    
+    
+   
+   <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="Data"> 
+  <h1>Operating System</h1>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\operating_system.jpg" width="20%" align="right">
+      <p> An operating system (OS) is system software that manages computer hardware and software resources,
+and it is a collection of softwares.<br>
+All computers and computer-like devices require operating systems, including your laptop, tablet, desktop
+, smartphone, smartwatch, and router.<br></p>
+
+<h3><strong>Objectives of Operating System</strong></h3>
+
+<ul>
+<li>To make the computer system convenient to use in an efficient manner.</li><br>
+<li>To hide the details of the hardware resources from the users.</li><br>
+<li>To provide users a convenient interface to use the computer system.</li><br>
+<li>To manage the resources of a computer system.</li><br>
+</ul>
+<h3><strong>Characteristics of Operating System</strong></h3>
+<ul>
+<li><strong>Memory Management : </strong> Keeps track of the primary memory, i.e. what part of it is in use by whom, what 
+part is not in use, etc. and allocates the memory when a process.</li><br>
+ <li><strong>Processor Management : </strong> Allocates the processor (CPU) to a process
+ and deallocates the processor when it is no longer required.</li><br>
+<li><strong>Device Management :</strong> Keeps track of all the devices. 
+This is also called I/O controller that decides which process gets the device.</li><br>
+<li><strong>File Management :</strong> Allocates and de-allocates the resources and decides who gets the resources.</li><br>
+<li><strong>Security :</strong> Prevents unauthorized access to programs and data by means of passwords and other
+ similar techniques.</li>
+</ul>     
+</section>
+      <hr>
+<section id="Types of OS">
+
+      <h2>Types of Operating System</h2><br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\OS.png" width="60%" align="center"><br>
+ <h3><strong>Batch Processing : </strong></h3>
+<p>This type of operating system do not interact with the computer directly. There is an operator
+ which takes similar jobs having same requirement and group them into batches.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\batchOS.jpg" width="45%" align="center">
+<br><br><strong>Advantages of Batch Operating System:</strong>
+<ul>
+<li>It is very difficult to guess or know the time required by any job to complete. </li>
+<li>Multiple users can share the batch systems</li>
+</ul>
+<strong>Disadvantages of Batch Operating System:</strong>
+<ul>
+<li>Batch systems are hard to debug.</li>
+<li>The other jobs will have to wait for an unknown time if any job fails</li>
+</ul>
+
+<h3><strong>Multiprogramming</strong></h3>
+<p>Sharing the processor, when two or more programs reside in memory at the same time, is referred as multiprogramming. 
+Multiprogramming assumes a single shared processor.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\multiprogramming.jpg" width="50%" align="center">
+<br><br><strong>Advantages of Multiprogramming: </strong>
+<ul>
+<li>High and efficient CPU utilization.</li>
+<li>User feels that many programs are allotted CPU almost simultaneously.</li>
+</ul>
+<strong>Disadvantages of Multiprogramming: </strong>
+<ul>
+<li>CPU scheduling is required.</li>
+<li>To accommodate many jobs in memory, memory management is required.</li>
+</ul>
+ <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" id="btn1" > Read More </button>
+<div id="demo" class="collapse" >
+<br> 
+<h3><strong>Time Sharing Operating System</strong></h3>
+<p>Each task has given some time to execute, so that all the tasks work smoothly.
+ Each user gets time of CPU as they use single system. </p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\timesharing.jpg" width="50%" align="center">
+<br><br><strong>Advantages of Time Sharing: </strong>
+<ul>
+<li>Each task gets an equal opportunity.</li>
+<li>CPU idle time can be reduced.</li>
+</ul>
+<strong>Disadvantages of Time Sharing: </strong>
+<ul>
+<li>One must have to take care of security and integrity of user programs and data.</li>
+<li>There is a problem in data communication.</li>
+</ul>
+
+<h3><strong>Real Time  Operating System</strong></h3>
+<p>Real-time systems are used when there are time requirements are very strict
+ like missile systems, air traffic control systems, robots etc. </p>
+<br><strong>Advantages of Real Time Operating System: </strong>
+<ul>
+<li>Maximum use of devices and system thus gives more output from all the resources.</li>
+<li>Memory allocation is well managed.</li>
+</ul>
+<strong>Disadvantages of Real Time: </strong>
+<ul>
+<li>Sometimes the system resources are not good enough and they are costly as well.</li>
+<li>Complex and difficult to write algorithms are used.</li>
+</ul>
+
+<h3><strong>Distributed Operating System</strong></h3>
+<p>Independent systems have their own memory unit and CPU. These are called as loosely coupled or distributed systems.
+ These systems processors vary in sizes and functions </p>
+<br><strong>Advantages of Distributed Operating System: </strong>
+<ul>
+<li>The data exchange speed is increased by using electronic mails.</li>
+<li>All systems are entirely independent]et of each other.</li>
+</ul>
+<strong>Disadvantages of Distributed Operating System: </strong>
+<ul>
+<li>If the main network fails, this will stop the complete communication.</li>
+<li>To establish such systems, the language which is used are not clearly and well defined still.</li>
+</ul>
+
+</div>
+</section>
+<hr>
+
+<section id="Process">
+<h2> Process Control Block </h2>
+
+<p>Process Control Block is a data structure that contains information of the process related to it.<br>
+It is very important for process management as the data structuring for processes is done in terms of the PCB.
+ It also defines the current state of the operating system.</p> <br> 
+
+
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\PCB.jpg" width="50%" align="center"><br><br>
+<h3>Structure of the Process Control Block</h3>
+<p>The process control stores many data items that are needed for efficient process management. </p>
+
+<strong>Process State</strong>
+<p>This specifies the process state i.e. new, ready, running, waiting or terminated</p>
+<strong>Process Number</strong>
+<p>This shows the number of the particular process.</p>
+<strong>Program Counter</strong>
+<p>This contains the address of the next instruction that needs to be executed in the process.</p>
+<strong>Registers</strong>
+<p>This specifies the registers that are used by the process. They may include accumulators,
+ index registers, stack pointers, general purpose registers etc.</p>
+<strong>List of Open Files</strong>
+<p>These are the different files that are associated with the process</p>
+<strong>CPU Scheduling Information</strong>
+<p>The process priority, pointers to scheduling queues etc. is the CPU scheduling information that is contained in the PCB. </p>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo1" id="btn2">Read More</button>
+<div id="demo1" class="collapse">
+
+<strong>Memory Management Information</strong>
+<p>The memory management information includes the page tables or the segment tables depending on the memory system used. 
+</p>
+<strong>I/O Status Information</strong>
+<p>This information includes the list of I/O devices used by the process, the list of files etc.</p>
+<strong>Location of the Process Control Block</strong>
+<p>The process control block is kept in a memory area that is protected from the normal user access. 
+This is done because it contains important process information. </p>
+<br>
+<h3>How the Stack grows</h3>
+<strong>Scenario 1 : Stack is empty</strong>
+<p>The stack is called empty if it doesn't contain any element inside it. At this stage, the value of variable top is -1.</p>
+<strong>Scenario 2 : Stack is not empty</strong>
+<p>Value of top will get increased by 1 every time when we add any element to the stack. In the following stack,
+ After adding first element, top = 2.</p>
+<strong>Scenario 3 : Deletion of an element</strong>
+<p>Value of top will get decreased by 1 whenever an element is deleted from the stack.<br>
+In the following stack, after deleting 10 from the stack, top = 1.</p>
+<br>
+<h3>Algorithm for PUSH operation</h3>
+<p>1. Check if the stack is <strong>full</strong> or not.</p>
+<p>2. If the stack is full, then print error of overflow and exit the program.</p>
+<p>3. If the stack is not full, then increment the top and add the element.</p>
+
+<h3>Algorithm for POP operation</h3>
+<p>1. Check if the stack is empty or not.</p>
+<p>2. If the stack is empty, then print error of underflow and exit the program.</p>
+<p>3. If the stack is not empty, then print the element at the top and decrement the top.</p>
+
+
+</div>
+</section>
+<hr>
+<section id="Dead Lock">
+<h2>Dead Lock</h2>
+<p>Deadlock is a situation where a set of processes are blocked because each
+ process is holding a resource and waiting for another resource acquired by some other process.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Deadlock.PNG" width="70%" align="center">
+<br>
+<strong>Deadlock can arise if following four conditions hold simultaneously :-</strong><br><br>
+
+<p><strong>Mutual Exclusion: </strong>One or more than one resource are non-sharable (Only one process can use at a time)</p>
+<p><strong>Hold and Wait: </strong>: A process is holding at least one resource and waiting for resources.</p>
+<p><strong>No Preemption: </strong>A resource cannot be taken from a process unless the process releases the resource.</p>
+<p><strong>Circular Wait: </strong>A set of processes are waiting for each other in circular form.</p>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo2" id="btn3">Read More</button>
+<div id="demo2" class="collapse">
+
+<h4><strong>Methods for handling deadlock : </strong></h4>
+
+<p><strong>Deadlock Avoidance</strong>It is better to avoid a deadlock rather than take measures after the deadlock has occurred. 
+The wait for graph can be used for deadlock avoidance.</p>
+<p><strong>Deadlock Prevention</strong>So, the system checks each transaction before it is executed to make sure it does not lead to deadlock.
+ If there is even a slight chance that a transaction may lead to deadlock in the future, it is never allowed to execute.</p>
+<p>Ignore the problem all together: If deadlock is very rare, then let it happen and reboot the system. 
+This is the approach that both Windows and UNIX take.</p>
+
+</div>
+</section>
+
+<hr>
+<section id="Scheduling">
+<h2>Process Scheduling</h2>
+<p>The process scheduling is the activity of the process manager that handles the removal of the running process
+ from the CPU and the selection of another process on the basis of a particular strategy.</p>
+
+<h3>Process Scheduling Queues</h3>
+<p>The OS maintains a separate queue for each of the process states and PCBs 
+of all processes in the same execution state are placed in the same queue.</p>
+<p>The Operating System maintains the following important process scheduling queues :-  </p>
+<ul>
+<li><strong>Job queue :- </strong>This queue keeps all the processes in the system.</li><br>
+<li><strong>Ready queue :- </strong>This queue keeps a set of all processes residing in main memory,
+ ready and waiting to execute.A new process is always put in this queue.</li><br>
+<li><strong>Device queues :- </strong>The processes which are blocked due to unavailability of an I/O device constitute this queue.</li>
+</ul>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\scheduling.jpg" width="60%"><br><br>
+<h3>Schedulers</h3>
+<p>Schedulers are special system software which handle process scheduling in various ways.Schedulers are of three types :-</p>
+<ul>
+<li>Long-Term Scheduler</li>
+<li>Short-Term Scheduler</li>
+<li>Medium-Term Scheduler</li>
+</ul>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo3" id="btn4">Read More</button>
+<div id="demo3" class="collapse"><br>
+<h4><strong>Long-Term Scheduler</strong></h4>
+<p>It is also called a job scheduler. A long-term scheduler determines which programs are admitted to the system for processing. 
+It selects processes from the queue and loads them into memory for execution. </p>
+<h4><strong>Short-Term Scheduler</strong></h4>
+<p>Short-term schedulers, also known as dispatchers, make the decision of which process to execute next.
+ Short-term schedulers are faster than long-term schedulers.</p>
+<h4><strong>Medium-Term Scheduler</strong></h4>
+<p>Medium-term scheduling is a part of swapping. It removes the processes from the memory.
+ It reduces the degree of multiprogramming</p>
+</div>
+</section>
+<hr>
+<section id="Paging">
+<h2>Paging</h2>
+<p>1. Paging is a storage mechanism used to retrieve processes 
+from the secondary storage into the main memory in the form of pages.</p>
+<p>2. The main idea behind the paging is to divide each process in the form of pages. 
+The main memory will also be divided in the form of frames.</p>
+<p>3. The pages can be stored at the different locations of the memory but the priority is always to find the contiguous frames or holes.</p>
+<p>4. Different operating system defines different frame sizes. The sizes of each frame must be equal.</p>
+<p>5. Considering the fact that the pages are mapped to the frames in Paging, page size needs to be as same as frame size.</p>
+<br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\paging.png" width="55%" align="center"><br><br>
+<h3>Avantages of Paging</h3>
+<ul>
+<li>Paging reduces external fragmentation.</li>
+<li>Paging is simple to implement and efficient memory management technique.</li>
+<li>Due to equal size of the pages and frames, swapping becomes very easy.</li>
+</ul>
+
+<h3>Disadvantages of Paging</h3>
+<ul>
+<li>Paging suffer from internal fragmentation.</li>
+<li>Page table requires extra memory space, so may not be good for a system having small RAM.</li>
+</ul>
+</section>
+<hr>
+<section id="Segmentation">
+<h2>Segmentation</h2>
+<p> Segmentation is a memory management technique in which, the memory is divided into the variable size parts.
+ Each part is known as segment which can be allocated to a process.</p>
+<p>The details about each segment are stored in a table called as segment table.</p>
+<p>Segment table contains mainly two information about segment:-</p>
+<ul>
+<li>Base: It is the base address of the segment</li>
+<li>Limit: It is the length of the segment.</li>
+</ul>
+<p>The operating system maintains a segment map table for every process and a list of free memory blocks along 
+with segment numbers, their size and corresponding memory locations in main memory.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\segment.jpg" width="55%" align="center"><br><br>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo5" id="btn6">Read More</button>
+<div id="demo5" class="collapse">
+<br>
+<h3>Advantages of Segmentation</h3>
+<ul>
+<li>No internal fragmentation</li>
+<li>Average Segment Size is larger than the actual page size</li>
+<li>Less overhead</li>
+</ul>
+<h3>Disadvantages of Segmentation</h3>
+<ul>
+<li>It can have external fragmentation.</li>
+<li>It is difficult to allocate contiguous memory to variable sized partition.</li>
+<li>Costly memory management algorithms.</li>
+</ul>
+</div>
+</section>
+<hr>
+<section id="FCFS">
+<h2>FCFS Scheduling Algorithm</h2>
+<p>It is the simplest Disk Scheduling algorithm. It services the IO requests in the order in which they arrive.
+ There is no starvation in this algorithm, every request is serviced.</p>
+<h3>Disadvantages </h3>
+<ul>
+<li>The scheme does not optimize the seek time.</li>
+<li>The request may come from different processes therefore there is the possibility of inappropriate movement of the head.</li>
+</ul><br>
+<h4>Example</h4>
+<p>Consider the following disk request sequence for a disk with 100 tracks 45, 21, 67, 90, 4, 50, 89, 52, 61, 87, 25</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\fcfs.png" width="45%"><br>
+<br>
+<p>Number of cylinders moved by the head</p>
+
+<p>= (50-45)+(45-21)+(67-21)+(90-67)+(90-4)+(50-4)+(89-50)+(61-52)+(87-61)+(87-25)</p>
+
+<p>= 5 + 24 + 46 + 23 + 86 + 46 + 49 + 9 + 26 + 62</p>
+
+<p>= 376</p>
+</section>
+<hr>
+<section id="SSTF">
+<h2>SSTF Scheduling Algorithm</h2>
+<p>Shortest seek time first (SSTF) algorithm selects the disk I/O request which requires the least disk arm movement 
+from its current position regardless of the direction. It reduces the total seek time as compared to FCFS.</p>
+<h3>Disadvantages </h3>
+<ul>
+<li>It may cause starvation for some requests.</li>
+<li>Switching direction on the frequent basis slows the working of algorithm.</li>
+</ul><br>
+<h4>Example</h4>
+<p>Consider the following disk request sequence for a disk with 100 tracks</p>
+<p>45, 21, 67, 90, 4, 89, 52, 61, 87, 25</p>
+<p>Head pointer starting at 50. Find the number of head movements in cylinders using SSTF scheduling.</p><br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\sstf.png" width="45%"><br>
+<br>
+<p>Number of cylinders = 5 + 7 + 9 + 6 + 20 + 2 + 1 + 65 + 4 + 17 = 136</p>
+</section>
+
+<hr>
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

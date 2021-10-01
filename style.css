@@ -1,0 +1,259 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+    /*---------------Navigation--------------------*/
+#nav-bar
+{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar-brand img
+{
+height: 85px;
+padding-left: 45px;
+
+}
+
+
+
+
+.navbar-nav li 
+{
+  padding: 0 10px;
+}
+.navbar-nav li a
+{
+  float: right;
+  text-align: left;
+}
+#nav-bar ul li a:hover
+{
+  color: #007bff!important;
+}
+.navbar
+{
+  background: #fff;
+}
+.navbar-toggler
+{
+  border: none!important;
+}
+.nav-link
+{
+  color: #555!important;
+  font-weight: 600;
+  font-size: 16px;
+}
+/*--------------Slider------------------*/
+#slider
+{
+  width: 100%;
+  background-size: cover;
+  padding-left:6%;
+                 
+
+}
+.carousel-caption
+{
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial!important;
+}
+.carousel-caption h5
+{
+  color: #fff;
+  font-size: 42px;
+}
+
+/*--------------What's New--------------------*/
+#What's New
+{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #555;
+}
+#What's New .col-md-6
+{
+  padding: 20px 10px;
+}
+.What's New h3
+{
+   margin: 20px auto;
+}
+#What's New btn
+{
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+
+/*----------------Course--------------------------*/
+#Course
+{
+  background-image: linear-gradient(rbga(0,0,0,0.8),rbga(0,0,0,0.8)),
+  url(C:\Users\Dell\Downloads\Desktop\collection\isw1\img\pexels-photo-1532621.jpeg);
+  background-color: #cccccc;
+  background-size: cover;
+  background-position: center;
+  color: #787272 !important;
+  background-attachment: fixed;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#Course h1
+{
+  text-align: center;
+  color: #787272 !important;
+  padding-bottom: 10px;
+}
+#Course h1::after
+{
+  content: '';
+  background: #787272;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.Course
+{
+  margin-top: 40px;
+}
+.icon
+{
+  font-size: 30px;
+  margin: 10px auto;
+  padding: 50px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #fff;
+  border-radius: 30%;
+}
+.Course
+{
+  margin-top: 40px;
+}
+.icon
+{
+  font-size: 30px;
+  margin: 10px auto;
+  padding: 50px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #fff;
+  border-radius: 30%;
+                 image-size:20px;
+}
+
+.Course
+{
+  margin-top: 40px;
+}
+.icon
+{
+  font-size: 30px;
+  margin: 10px auto;
+  padding: 50px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #fff;
+  border-radius: 30%;
+                 image-size:20px;
+}
+.Course
+{
+  margin-top: 30px;
+}
+.icon
+{
+  font-size: 30px;
+  margin: 10px auto;
+  padding: 50px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #fff;
+  border-radius: 30%;
+                 image-size:20px;
+}
+.Course
+{
+  margin-top: 40px;
+}
+.icon
+{
+  font-size: 30px;
+  margin: 10px auto;
+  padding: 50px;
+  height: 80px;
+  width: 80px;
+  border: none;
+  border-radius: none;
+  border-image-width: 20px;
+ padding-right: 100px;
+}
+  /*-----------Footer---------------*/
+#Contact
+{
+    margin-top: 90px;
+    padding: 2px;
+    background-color: #efefef;
+    color:#013f7e;
+ 
+}
+.Contact-logo
+{
+  width: 130px;
+  margin-top: 25px;
+  margin-bottom: 1px;
+
+}
+#Contact h1
+{
+  font-size: 20px;
+  text-align: left;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+#Contact p
+{
+  font-size: 12px;
+  text-align: left;
+  magin-bottom: 70px;
+
+}
+#Contact .fa
+{
+  padding-right: 20px;
+  font-size: 15px;
+}
+#Contact .row .fab
+{
+  padding-right: 20px;
+  font-size: 15px;
+}
+#Contact hr
+{
+  margin-top: 30px;
+}
+#Contact .fa-heart
+{
+  font-size: 17px;
+}
+#Contact .by
+{
+  margin-bottom: -80px;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+

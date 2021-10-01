@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Java Programming</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+
+ .header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 7450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<nab>
+                                         
+                                             <ul>
+                                                    <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                                                   <li> <a href="WebTechnology.html" class="current">Next <i class="fa fa-hand-o-right"></i></a></li></ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">Java Programming</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#java-basics">Java-Basic</a></li>
+        <li><a href="#JVM,JDK.JRE">JVM,JDK,JRE</a></li>
+        <li><a href="#Java-variable">Java Variable</a></li>
+        <li><a href="#Java-OOPs">Java OOPs</a></li>
+        <li><a href="#Array">Java Array</a></li>
+        <li><a href="#thread">Multithreading</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>Java Programming Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#java-basics">Java-Basics</a></li>
+        <li><a href="#JVM,JDK.JRE">JVM,JDK,JRE</a></li>
+        <li><a href="#Java-variable">Java Variable</a></li>
+        <li><a href="#Java-OOPs">Java OOPs</a></li>
+        <li><a href="#Array">Java Array</a></li>
+        <li><a href="#thread">Multithreading</a></li>
+      </ul><br>
+    </div>
+    
+    
+   
+   <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="java-basics">   <h1>What is Java</h1>
+      <p>Java is an object-oriented, class-based, concurrent, secured and general-purpose computer-programming language.
+     Java is a programming language and a platform independence. Its is also a high level  language.</p>
+     <Strong>Platform :</Strong><p> Any hardware or software environment in which a program runs, is known as a platform. 
+      Since Java has a runtime environment (JRE) and API, it is called a platform.</p>
+ <strong>Feature:</strong>The primary objective of Java programming language creation was to make it portable,
+ simple and secure programming
+  language.<br>
+<h4><strong>A list of most important features of Java language is given below.</strong></h4>
+	<ul><img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\java image project.png"
+                   width="50%" align="right">
+                 <li>Simple</li>
+ 	<li>Object-Oriented</li>
+	<li>Portable</li>
+	<li>Platform independent</li>
+	<li>Secured</li>
+	<li>Robust</li>
+	<li>Architecture neutral</li>
+	<li>Interpreted</li>
+	<li>High Performance</li>
+	<li>Multithreaded</li>
+	<li>Distributed</li>
+	<li>Dynamic</li>
+                  </ul>     
+ 
+ 
+      <h2>Syntax</h2>
+<pre class="result notranslate">
+class Simple{  
+    public static void main(String args[]){  
+     System.out.println("Hello Java");  
+    }  
+}  
+</pre>
+</section>
+      <hr>
+<section id="JVM,JDK.JRE">
+      <h3>JVM,JDK,JRE</h3>
+     <strong>JVM: </strong>It is called a virtual machine . It is a specification that provides a runtime environment
+      in which Java bytecode can be executed.
+      It can also run those programs which are written in other languages and compiled to Java bytecode.
+    <h4><strong>The JVM performs the following main tasks: </strong></h4>
+ 
+   <ul>
+   <li> Loads code</li>
+   <li> Verifies code </li>
+   <li> Execute code </li>
+   <li> Provide run time environment</li>
+   </ul>
+   <strong> JRE(Java RunTime Environment): </strong>
+ It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for developing
+ Java applications. It is used to provide the runtime environment.
+ It is the implementation of JVM. It physically exists.It contains a set of libraries + other files that JVM uses at runtime.
+<h1><img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\jre2.png" width="75%" align="center"></h1>
+
+<strong> JDK(Java Development Kit): </strong>
+Its stand for Java development kit. The Java Development Kit (JDK) is a software development environment which is used to
+ develop Java applications and applets.It physically exists. It contains JRE + development tools.
+<h1><img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\jdk2.png" width="75%" align="center"></h1>
+</section>
+<hr>
+<section id="Java-variable">
+<h3> Java Variable </h3>
+<p>A variable is a container which holds the value while the java program is executed. A variable is assigned with a datatype.
+<br>Variable is a name of memory location. There are three types of variables in java: local, instance and static.
+</p>
+<br>
+<strong>Types of Variable</strong>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\types-of-variables1.png"
+        height="25%" width="35%" align="right">
+   <ul>
+<br>
+      
+     <br> <li>Local Variable</li>
+     <br> <li>Instance Variable</li>
+     <br> <li>Static Variable</li>
+</ul>
+<br>
+<br>
+<ol>
+<li><strong>Local Variable</strong> </li>
+<p>Local variable are declared within methods, constructor and block. Local variable are visible only within the declared
+methods,constructor and block. Local variable are created when the methods, constructor and block is entered and
+destroyed one's it exits the method, constructor and block.</p>
+
+<li><strong>Instance Variable</strong> </li>
+<p>Instance variable are declared in a class but outside a method, constructor or any block. Instance variable are created when
+      an object is created with the use of 'new'  keyword and destroyed when the object is destroyed.</p>
+
+<li><strong>Static Variable</strong></li>
+<p>Static variable are declared with static keyword in class but outside method, constructor and block.
+      There would be only one copy of each class variable per class regardless of how  many objects are created from it.
+     </p>
+</ol>
+      <h2>Syntax</h2>
+<pre class="result notranslate">
+class A{  
+int data=50;//instance variable  
+static int m=100;//static variable  
+void method(){  
+int n=90;//local variable  
+}  
+}//end of class  
+
+</pre>
+</section>
+<hr>
+<section id="Java-OOPs">
+<h3> Java OOPs </h3>
+
+<p> Object-Oriented Programming is a paradigm that provides many concepts such as inheritance,
+ data binding, polymorphism, etc.<br> The popular object-oriented languages are Java, C#, PHP, Python, C++, etc.</p>
+<br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\java-oops.png" width="65%" align="right">
+
+<strong>Object :</strong>
+<br>
+<p>An entity that has state and behavior is known as an object.<br> 
+An object in Java is the physical as well as logical entity whereas a class in Java is a logical entity only.</p>
+<br>
+<h4><strong>An object has three characteristics:</strong></h4>    
+<ul>
+<li><strong>State:</strong></li>
+<p>Represents the data (value) of an object.</p>
+
+<li><strong>Behavior:</strong></li>
+<p>Represents the behavior (functionality) of an object such as deposit, withdraw, etc.</p>
+
+<li><strong>Identity:</strong></li>
+<p> An object identity is typically implemented via a unique ID.
+ The value of the ID is not visible to the external user. However, it is used internally by the JVM
+ to identify each object uniquely.</p>
+</ul>
+
+<strong>Class :</strong>
+<br>
+<p>A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. 
+      It is a logical entity. It can't be physical.</p>
+<br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\class-in-java.png" width="25%" align="right">
+<p>A class in Java can contain:</p>
+<ul>
+
+<li><strong>Fields</strong></li><br>
+<li><strong>Methods</strong></li><br>
+<li><strong>Constructors</strong></li><br>
+<li><strong>Blocks</strong></li><br>
+<li><strong>Nested class and inteface</strong></li><br>
+</ul>
+      <h4>Syntax to declare class :</h4>
+<pre class="result notranslate">
+class Class_name{  
+    field;  
+    method;  
+}  
+</pre>
+<br>
+<strong>Inheritence :</strong><br>
+<p>Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object.
+ It is an important part of OOPs (Object Oriented programming system).<br>
+<br>
+The idea behind inheritance in Java is that you can create new classes that are built upon existing classes.
+ When you inherit from an existing class, you can reuse methods and fields of the parent class.</p>
+<br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\inheritance.jpg" width="20%" align="right">
+<h4><strong>Terms used in Inheritance</strong></h4>
+<ul>
+<br>
+<li>Class</li><br>
+<li>Sub-class/Child-class</li><br>
+<li>Super-class/Parent-class</li><br>
+<li>Reusability</li><br>
+</ul>
+<br>
+<strong>Polymorphism :</strong>
+<br>
+<p>Polymorphism in Java is a concept by which we can perform a single action in different ways. ...
+ So polymorphism means many forms.<br> <br>There are two types of polymorphism in Java: compile-time polymorphism and 
+runtime polymorphism. We can perform polymorphism in java by method overloading and method overriding.<p>
+<br>
+
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\images.png" width="50%">
+<br>
+<br>
+<strong>Abstraction</strong>
+<p> Abstraction is a process of hiding the implementation details and showing only functionality to the user.<br>
+<br>
+Another way, it shows only essential things to the user and hides the internal details, for example, 
+sending SMS where you type the text and send the message. You don't know the internal processing about the message delivery.
+<br><br>
+Abstraction lets you focus on what the object does instead of how it does it.</p>
+<br>
+<strong> Encapulation </strong>
+<p>Encapsulation in Java is a process of wrapping code and data together into a single unit,
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\capsule.jpg" width="15%" align="right">
+ for example, a capsule which is mixed of several medicines.<br><br>
+
+We can create a fully encapsulated class in Java by making all the data members of the class private.
+ Now we can use setter and getter methods to set and get the data in it.</p>
+</section>
+<hr>
+<section id="Array">
+<br>
+<h3>Array</h3>
+<p>Java array is an object which contains elements of a similar data type. It is a data structure where we store similar elements. 
+We can store only a fixed set of elements in a Java array.
+<br><br>
+Array in java is index-based, the first element of the array is stored at the 0 index.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\array.gif" width="40%">
+<br>
+<strong>Advantages</strong>
+<ul>
+<br>
+<li><strong>Code Optimization:</strong>
+It makes the code optimized, we can retrieve or sort the data efficiently.</li>
+<li><strong>Random access:</strong>
+We can get any data located at an index position.</li>
+</ul>
+<br>
+<strong>Disadvantages </strong>
+<ul>
+<br>
+<li><strong>Size Limit:</strong>
+We can store only the fixed size of elements in the array. It doesn't grow its size at runtime.
+To solve this problem, collection framework is used in Java which grows automatically.
+</li>
+</ul>
+<br>
+<h4>Syntax to declare array in java </h4>
+<pre class="result notranslate">
+dataType[] arr; (or)  
+dataType []arr; (or)  
+dataType arr[];  
+</pre>
+<br>
+<h4> Instantiation of an Array in Java </h4>
+<pre class="result notranslate">
+arrayRefVar=new datatype[size];  
+</pre>
+<br>
+<h4> Example of array in java </h4>
+<pre class="result notranslate">
+class ArrayExample {
+   public static void main(String[] args) {
+
+      int[] age = {12, 4, 5, 2, 5};
+
+      for (int i = 0; i < 5; ++i) {
+         System.out.println("Element at index " + i +": " + age[i]);
+      }
+   }
+}
+
+</pre>
+</section>
+<hr>
+<section id="thread">
+<h3>Multithreading in Java</h3>
+<p>Multithreading in java is a process of executing multiple threads simultaneously.<br><br>
+A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading,
+ both are used to achieve multitasking.<br> However, we use multithreading than multiprocessing because threads
+ use a shared memory area. Java Multithreading is mostly used in games, animation, etc.
+</p>
+<strong>Advantages of Java Multithreading</strong>
+<br>
+<ul>
+<br>
+<li>It doesn't block the user because threads are independent and you can perform multiple operations at the same time.</li>
+<li> You can perform many operations together, so it saves time.</li>
+<li>Threads are independent, so it doesn't affect other threads if an exception occurs in a single thread.</li>
+</ul>
+<strong>Diagram : </strong><br><br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\java-multithreading.png" width="35%">
+</section>
+<hr>
+
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

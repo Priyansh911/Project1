@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Computer Architecture</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+ <style>
+
+ .header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 7700px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<nab>
+                                         
+                                             <ul>
+                                                    <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                                                   <li> <a href="ComputerNetwork.html" class="current">Next <i class="fa fa-hand-o-right"></i></a> </li></ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">Computer Architecture</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#Modes">Adressing Modes</a></li>
+        <li><a href="#Instruction Cycle">Instruction Cycle</a></li>
+        <li><a href="#Pipelining">Pipelining</a></li>
+        <li><a href="#I/O Processor">I/O Processor</a></li>
+        <li><a href="#RISC&CISC"> RISC&CISC</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>Computer Architecture Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#Modes">Adressing Modes</a></li>
+        <li><a href="#Instruction Cycle">Instruction Cycle</a></li>
+        <li><a href="#Pipelining">Pipelining</a></li>
+        <li><a href="#I/O Processor">I/O Processor</a></li>
+        <li><a href="#RISC&CISC"> RISC&CISC</a></li>
+      </ul><br>
+    </div>
+    <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="Modes"> 
+   <h1>Adressing Modes</h1>
+      <p>The term addressing modes refers to the way in which the operand of an instruction is specified. 
+Information contained in the instruction code is the value of the operand or the address of the result/operand.</p>
+<h2>Types of Adressing Modes</h2>
+<h3>Immediate Mode</h3> 
+<p>In this mode, the operand is specified in the instruction itself.
+ An immediate mode instruction has an operand field rather than the address field.</p>
+<p><strong>For Example :</strong>ADD 7, which says Add 7 to contents of accumulator. 7 is the operand here.</p>
+<h3>Register Mode</h3>
+<p>In this mode the operand is stored in the register and this register is present in CPU. 
+The instruction has the address of the Register where the operand is stored.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\register-mode.png" width="55%" align="center"><br>
+<h4>Advantages</h4>
+<p>1. Shorter instructions and faster instruction fetch.</p>
+<p>2. Faster memory access to the operand(s)</p>
+<h4>Disadvantages</h4>
+<p>1. Very limited address space</p>
+<p>2. Using multiple registers helps performance but it complicates the instructions.</p>
+<h3>Register Indirect Mode</h3>
+<p>n this mode, the instruction specifies the register whose contents give us the address of operand which is in memory. 
+Thus, the register contains the address of operand rather than the operand itself.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\register-indirect-mode.png" width="55%" align="center">
+<h3>Direct Addressing Mode</h3>
+<p>In this mode, effective address of operand is present in instruction itself.</p>
+<ul>
+<li>Single memory reference to access data.</li>
+<li>No additional calculations to find the effective address of the operand.</li>
+</ul>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\direct-addressing-mode.png" width="55%" align="center">
+<br>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" id="btn1" > Read More </button>
+<div id="demo" class="collapse" >
+<h3>Indirect Addressing Mode</h3>
+<p>In this, the address field of instruction gives the address where the effective address is stored in memory.
+ This slows down the execution, as this includes multiple memory lookups to find the operand.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\direct-addressing-mode.png" width="55%" align="center">
+<h3>Displacement Addressing Mode</h3>
+<p>n this the contents of the indexed register is added to the Address part of the instruction, 
+to obtain the effective address of operand.</p>
+<p>EA = A + (R), In this the address field holds two values, 
+A(which is the base value) and R(that holds the displacement), or vice versa.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\displacement-mode.png" width="55%" align="center">
+</div>
+</section>
+      <hr>
+<section id="Instruction Cycle">
+
+      <h2>Instruction Cycle</h2>
+<p>An instruction cycle, also known as fetch-decode-execute cycle is the basic operational process of a computer. 
+This process is repeated continuously by CPU from boot up to shut down of computer.</p>
+<p>Following are the steps that occur during an instruction cycle:</p>
+<ul>
+<li>Fetch the Instruction</li>
+<li>Decode the Instruction</li>
+<li>Read the Effective Address</li>
+<li>Execute the Instruction</li>
+</ul>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\instruction-cycle.png" width="55%" align=center">
+<h4>Fetch the Instruction</h4>
+<p>The instruction is fetched from memory address that is stored in PC(Program Counter) and stored in the instruction register IR.</p>
+<h4>Decode the Instruction</h4>
+<p>The instruction in the IR is executed by the decoder.</p>
+<h4>Read the Effective Address</h4>
+<p>If the instruction has an indirect address, the effective address is read from the memory. Otherwise operands are directly read in case of immediate operand instruction.
+</p>
+<h4>Execute the Instruction</h4>
+<p>The Control Unit passes the information in the form of control signals to the functional unit of CPU. 
+The result generated is stored in main memory or sent to an output device.</p>
+</section>
+<hr>
+
+<section id="Pipelining">
+<h2>Pipelining</h2>
+
+<p>Pipelining is a technique where multiple instructions are overlapped during execution.
+ Pipeline is divided into stages and these stages are connected with one another to form a pipe like structure. </p> 
+<p>Instructions enter from one end and exit from another end, Pipelining increases the overall instruction throughput.</p>
+<p>Each segment consists of an input register followed by a combinational circuit.
+The output of combinational circuit is applied to the input register of the next segment.</p>
+
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\pipelining.png" width="60%" align="center"><br>
+<br>
+<p>Pipeline system is like the modern day assembly line setup in factories. For example in a car manufacturing industry, huge assembly
+ lines are setup and at each point, there are robotic arms to perform a certain task,</p>
+</section>
+<hr>
+<section id="I/O Processor">
+<h2>Input/Output Processor</h2>
+<p>An input-output processor (IOP) is a processor with direct memory access capability.
+ In this, the computer system is divided into a memory unit and number of processors.</p>
+<p> The IOP can fetch and execute its own instructions. These IOP instructions are designed to manage I/O transfers only.</p>
+
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\inputoutput.png" width="70%" align="center">
+<br><br>
+<p>The CPU can act as master and the IOP act as slave processor. The CPU assigns the task of initiating operations
+ but it is the IOP, who executes the instructions, and not the CPU. </p>
+<p>CPU instructions provide operations to start an I/O transfer. The IOP asks for CPU through interrupt.</p>
+<p>Instructions that are read from memory by an IOP are also called commands to distinguish them from instructions that are read by CPU. </p>
+<p>Commands are prepared by programmers and are stored in memory. Command words make the program for IOP. 
+CPU informs the IOP where to find the commands in memory.</p>
+</section>
+
+<hr>
+<section id="RISC&CISC">
+<h2>RISC</h2>
+<p>RISC makes hardware simpler by using an instruction set composed of a few basic steps for loading, evaluating
+ and storing operations just like an addition command will be composed of loading data, evaluating and storing.</p>
+<h4><strong>Characteristic of RISC :-</strong></h4>
+<p>1. Simpler instruction, hence simple instruction decoding.</p>
+<p>2. Instruction take single clock cycle to get executed.</p>
+<p>3. Simple Addressing Modes.</p>
+<p>4. Pipeling can be achieved.</p>
+<p><strong>For Example :- </strong> Suppose we have to add two 8-bit number:</p>
+<p><strong>RISC approach: </strong>Here programmer will write first load command to load data in 
+registers then it will use suitable operator and then it will store result in desired location.</p>
+<h2>CISC</h2>
+<p>CISC makes hardware complex as a single instruction will do all loading, evaluating and storing operations
+ just like a multiplication command will do stuff like loading data, evaluating and storing it.</p>
+<strong>Characteristic of CISC :-</strong>
+<p>1. Complex instruction, hence complex instruction decoding.</p>
+<p>2. Instruction are larger than one word size.</p>
+<p>3. Complex Addressing Modes.</p>
+<p>4. More Data types.</p>
+<p><strong>For Example :- </strong> Suppose we have to add two 8-bit number:</p>
+<p><strong>CISC approach: </strong>There will be a single command or instruction for this like ADD which will perform the task.</p>
+
+</section>
+<hr>
+
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

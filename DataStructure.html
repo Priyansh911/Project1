@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data Structure</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+
+.header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 8130px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<nab>
+                                         
+                         <ul>
+                            <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                           <li> <a href="ComputerArchitecture.html" class="current">Next <i class="fa fa-hand-o-right"></i></a> </li></ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">Data Structure</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#Data">Data Structure</a></li>
+        <li><a href="#Types of Data">Types of Data Structure</a></li>
+        <li><a href="#Stack">Stack</a></li>
+        <li><a href="#Linked"> Linked List</a></li>
+        <li><a href="#Queue">Queue</a></li>
+        <li><a href="#Tree">Tree</a></li>
+        <li><a href="#Linear">Linear Search</a></li>
+        <li><a href="#Binary">Binary Search</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>Data Structure Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#Data">Data Structure</a></li>
+        <li><a href="#Types of Data">Types of Data Structure</a></li>
+        <li><a href="#Stack">Stack</a></li>
+        <li><a href="#Linked"> Linked List</a></li>
+        <li><a href="#Queue">Queue</a></li>
+        <li><a href="#Tree">Tree</a></li>
+        <li><a href="#Linear">Linear Search</a></li>
+        <li><a href="#Binary">Binary Search</a></li>
+      </ul><br>
+    </div>
+    
+    
+   
+   <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="Data"> 
+  <h1>Data Structure</h1>
+      <p>Data Structure can be defined as the group of data elements
+ which provides an efficient way of storing and organising data in the computer so that it can be used efficiently.<br>
+Some examples of Data Structures are arrays, Linked List, Stack, Queue, etc.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\ChData.png" width="35%" align="right">
+<h4><strong>Characterstics of Data Structure</strong></h4>
+
+<ul>
+<li><strong>Correctness:</strong>Data structure implementation should implement its interface correctly.</li><br>
+<li><strong>Time Complexity:</strong>Running time or the execution time of operations of data structure must 
+be as small as possible.</li><br>
+<li><strong>Space Complexity:</strong>Memory usage of a data structure operation should be as little as possible.</li><br>
+</ul>
+<h4><strong>Need of Data Structure</strong></h4>
+<ul>
+<li><strong>Data Search : </strong>If the application is to search an item, it has to search an item in 1 million(106) items 
+every time slowing down the search. As data grows, search will become slower.</li>
+ <li><strong>Processor Speed : </strong>Processor speed although being very high, falls limited if the data grows to billion
+ records.</li>
+<li><strong>Multiple requests : </strong>As thousands of users can search data simultaneously on a web server, even
+ the fast server fails while searching the data.</li>
+</ul>     
+</section>
+      <hr>
+<section id="Types of Data">
+
+      <h2>Types of Data Structure</h2><br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\dstypes.png" width="60%" align="center">
+    <p></p>
+<p><strong>Linear Data Structure:</strong> A data structure is called linear if all of its elements are arranged in the linear order.
+the elements are stored in non-hierarchical way where each element has the successors and predecessors except the first 
+and last element.</p>
+<h3>Types of Linear Data Structure : </h3>
+ <p><strong>Array:</strong> An array is a collection of similar type of data items and each data item is called an element of the array.
+ The data type of the element may be any valid data type like char, int, float or double.
+<br><br>The individual elements of the array age are:<br><br>
+age[0], age[1], age[2], age[3],??? age[98], age[99].</p>
+<p><strong>Linked List:</strong> Linked list is a linear data structure which is used to maintain a list in the memory. 
+It can be seen as the collection of nodes stored at non-contiguous memory locations. </p>     
+<p><strong>Stack:</strong> Stack is a linear list in which insertion and deletions are allowed only at one end, called top.</p>
+
+<p><strong>Queue:</strong> Queue is a linear list in which elements can be inserted only at one end called rear and deleted only
+ at the other end called front.</p>
+
+ <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" id="btn1" > Read More </button>
+<div id="demo" class="collapse" >
+<br> 
+<p><strong>Non Linear Data Structures:</strong> This data structure does not form a sequence i.e. each item or element is connected 
+with two or more other items in a non-linear arrangement. The data elements are not arranged in sequential structure.</p>   
+<h3> Types of Non Linear Data Structures : </h3>
+<p><strong>Trees</strong> Trees are multilevel data structures with a hierarchical relationship among its elements known as nodes.
+ The bottommost nodes in the herierchy are called leaf node while the topmost node is called root node.<br><br>
+Tree data structure is based on the parent-child relationship among the nodes. Each node in the tree can have more than one children
+ except the leaf nodes whereas each node can have atmost one parent except the root node.
+</p>
+<p><strong>Graphs: </strong>Graphs can be defined as the pictorial representation of the set of elements connected by the links
+ known as edges. A graph is different from tree in the sense that a graph can have cycle while the tree can not have the one.</p>
+</div>
+</section>
+<hr>
+
+<section id="Stack">
+<h2> Stack </h2>
+<ul>
+<li>Stack is an ordered list in which, insertion and deletion can be performed only at one end that is called top.</li><br>
+<li>Stacks are sometimes called as Last-In-First-Out (LIFO) lists i.e. the element which is inserted first in the stack, 
+will be deleted last from the stack.</li>
+</ul>
+
+<h3>Applications of Stack</h3>
+<ul>
+<li>Recursion</li>
+<li>Expression evaluations and conversions</li>
+<li>Parsing</li>
+<li>Editors</li>
+<li>Tree Traversals</li>
+</ul>
+<h3>Operation of Stack</h3>
+<p>There are various operations which can be performed on stack.</p><br>  
+
+
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\stack.png" width="50%" align="center"><br><br>
+<p><strong> 1. PUSH() - </strong>Pushing (storing) an element on the stack.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\push.png" width="50%" align="center"><br><br>
+<p><strong> 2. POP() - </strong>Removing (accessing) an element from the stack.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\pop.png" width="50%" align="center"><br><br>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo1" id="btn2">Read More</button>
+<div id="demo1" class="collapse">
+<br>
+<h3>How the Stack grows</h3>
+<strong>Scenario 1 : Stack is empty</strong>
+<p>The stack is called empty if it doesn't contain any element inside it. At this stage, the value of variable top is -1.</p>
+<strong>Scenario 2 : Stack is not empty</strong>
+<p>Value of top will get increased by 1 every time when we add any element to the stack. In the following stack,
+ After adding first element, top = 2.</p>
+<strong>Scenario 3 : Deletion of an element</strong>
+<p>Value of top will get decreased by 1 whenever an element is deleted from the stack.<br>
+In the following stack, after deleting 10 from the stack, top = 1.</p>
+<br>
+<h3>Algorithm for PUSH operation</h3>
+<p>1. Check if the stack is <strong>full</strong> or not.</p>
+<p>2. If the stack is full, then print error of overflow and exit the program.</p>
+<p>3. If the stack is not full, then increment the top and add the element.</p>
+
+<h3>Algorithm for POP operation</h3>
+<p>1. Check if the stack is empty or not.</p>
+<p>2. If the stack is empty, then print error of underflow and exit the program.</p>
+<p>3. If the stack is not empty, then print the element at the top and decrement the top.</p>
+
+
+</div>
+</section>
+<hr>
+<section id="Linked">
+<h2>Linked List</h2>
+<ul>
+<li>Linked List can be defined as collection of objects called nodes that are randomly stored in the memory.</li><br>
+<li>A node contains two fields i.e. data stored at that particular address and the pointer which contains the 
+address of the next node in the memory.</li><br>
+<li>The last node of the list contains pointer to the null.</li>
+</ul>
+<br><br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\linked-list.png" width="70%" align="center">
+<br>
+<h3>Uses of Linked List</h3>
+<ul>
+<li>The list is not required to be contiguously present in the memory.</li>
+<li>List size is limited to the memory size and doesn't need to be declared in advance.</li>
+<li>Empty node can not be present in the linked list.</li>
+</ul>
+<h3>Insertion at the Beginning</h3>
+<ul>
+<li>The first Node is the Head for any Linked List.</li><br>
+<li>When a new Linked List is instantiated, it just has the Head, which is Null.</li><br>
+<li>When we want to add any Node at the front, we must make the head point to it.</li><br>
+<li>And the Next pointer of the newly added Node, must point to the previous Head,
+ whether it be NULL(in case of new List) or the pointer to the first Node of the List.</li><br>
+<li>The previous Head Node is now the second Node of Linked List, because the new Node is added at the front.</li></ul>
+<br>
+
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo2" id="btn3">Read More</button>
+<div id="demo2" class="collapse">
+<h3>Inserting at the End</h3>
+<ul>
+<li>If the Linked List is empty then we simply, add the new Node as the Head of the Linked List.</li><br>
+<li>If the Linked List is not empty then we find the last node, and make it' next to the new Node,
+ hence making the new node the last Node.</li></ul>
+
+<h3>Searching for an Element in the List </h3>
+<ul>
+<li>In searhing we do not have to do much, we just need to traverse like we did while getting the last node.</li><br>
+<li>If we get the Node with the same data, we will return it, otherwise we will make our pointer point the next Node, and so on.</li>
+</ul>
+<h3>Deleting a Node from the List</h3>
+<ul>
+<li>If the Node to be deleted is the first node, then simply set the Next pointer of the Head to point to the next 
+element from the Node to be deleted.</li><br>
+<li>If the Node is in the middle somewhere, then find the Node before it, and make the Node before it point to the Node next to it.</li>
+</ul>
+</div>
+</section>
+
+<hr>
+<section id="Queue">
+<h2>Queue</h2>
+<ul>
+<li> A queue can be defined as an ordered list which enables insert operations to be performed at 
+one end called <strong>REAR</strong> and delete operations to be performed at another end called<strong> FRONT</strong>.</li>
+<br>
+<li>Queue is referred to be as First In First Out list.</li><br>
+<li>For example, people waiting in line for a rail ticket form a queue.</li>
+</ul>
+<br>
+
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\queue.png" width="70%"><br><br>
+<h3>Basic features of Queue</h3>
+<ul>
+<li>Like stack, queue is also an ordered list of elements of similar data types.</li><br>
+<li>Queue is a FIFO( First in First Out ) structure.</li><br>
+<li>Once a new element is inserted into the Queue, all the elements inserted before 
+the new element in the queue must be removed, to remove the new element.</li><br>
+<li>peek( ) function is oftenly used to return the value of first element without dequeuing it.</li>
+</ul>
+<h3>Applications of Queue</h3>
+<ul>
+<li>Queues are widely used as waiting lists for a single shared resource like printer, disk, CPU.</li><br>
+<li>Queues are used as buffers in most of the applications like MP3 media player, CD player, etc.</li><br>
+<li>Queues are used in operating systems for handling interrupts.</li>
+</ul>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo3" id="btn4">Read More</button>
+<div id="demo3" class="collapse">
+<h3>Algorithm for ENQUEUE operation</h3>
+<ul>
+<li>Check if the queue is full or not.</li><br>
+<li>If the queue is full, then print overflow error and exit the program.</li><br>
+<li>If the queue is not full, then increment the tail and add the element.</li>
+</ul>
+<h3>Algorithm for DEQUEUE operation</h3>
+<ul>
+<li>Check if the queue is empty or not.</li><br>
+<li>If the queue is empty, then print underflow error and exit the program.</li><br>
+<li>If the queue is not empty, then print the element at the head and increment the head.</li>
+</ul>
+</div>
+</section>
+<hr>
+<section id="Tree">
+<h2>Tree</h2>
+<ul>
+<li>A Tree is a recursive data structure containing the set of one or more data nodes where one 
+node is designated as the root of the tree while the remaining nodes are called as the children of the root.</li><br>
+<li>The nodes other than the root node are partitioned into the non empty sets where each one of them is to be called sub-tree.</li>
+<br>
+<li>Nodes of a tree either maintain a parent-child relationship between them or they are sister nodes.</li>
+</ul>
+<br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\tree.png" width="55%" align="center"><br><br>
+<h3>Basic terminology</h3>
+<ul>
+<li><strong>Root Node :- </strong>The node at the top of the tree is called root. There is only one root per tree and one
+ path from the root node to any node.</li><br>
+<li><strong>Sub Tree :- </strong> Subtree represents the descendants of a node.</li><br>
+<li><strong>Leaf Node :- </strong>The node which does not have any child node is called the leaf node.</li><br>
+<li><strong>Path :- </strong>Path refers to the sequence of nodes along the edges of a tree.</li><br>
+<li><strong>Level Number :- </strong> Level of a node represents the generation of a node. If the root node 
+is at level 0, then its next child node is at level 1, its grandchild is at level 2, and so on.</li>
+</ul>
+
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo5" id="btn6">Read More</button>
+<div id="demo5" class="collapse">
+<h3>Static representation of tree</h3>
+<pre class="result notranslate">
+  #define MAXNODE 500  
+struct treenode {  
+    int root;  
+    int father;  
+    int son;  
+    int next;   
+}      
+</pre>
+<h3>Dynamic representation of tree</h3>
+<pre class="result notranslate">
+struct treenode   
+{  
+    int root;  
+    struct treenode *father;   
+    struct treenode *son   
+    struct treenode *next;   
+}  
+</pre>
+</div>
+</section>
+<hr>
+<section id="Linear">
+<h2>Linear Search Algorithm</h2>
+<p>Linear search is a very basic and simple search algorithm. In Linear search, we search an element 
+or value in a given array by traversing the array from the starting, till the desired element or value is found.</p>
+
+<h3>Implementing Linear Search</h3>
+<p>1. Traverse the array using a for loop.</p>
+<p>2. In every iteration, compare the target value with the current value of the array.</p>
+<ul>
+<li>If the values match, return the current index of the array.</li>
+<li>If the values do not match, move on to the next array element.</li>
+</ul>
+<p>3. If no match is found, return -1.</p>
+<p>To search the number 5 in the array given below, linear search will go
+ step by step in a sequential order starting from the first element in the given array.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\linear-search-array.png" width="35%"
+ padding="25%">
+<pre class="result notranslate">
+int linearSearch(int values[], int target, int n)
+{
+    for(int i = 0; i < n; i++)
+    {
+        if (values[i] == target) 
+        {       
+            return i; 
+        }
+    }
+    return -1;
+}
+</pre>
+<h4>Some Examples with Inputs</h4>
+<pre class="result notranslate">
+Input: values[] = {5, 34, 65, 12, 77, 35}
+target = 77
+Output: 4
+Input: values[] = {101, 392, 1, 54, 32, 22, 90, 93}
+target = 200
+Output: -1 (not found)
+</pre>
+</section>
+<hr>
+<section id="Binary">
+<h2>Binary Search Algorithm</h2>
+<p>1. Binary Search is applied on the sorted array or list of large size. It's time complexity of O(log n) makes it very fast as compared
+ to other sorting algorithms.
+<p>2. Binary search follows divide and conquer approach in which, the list is divided into two halves and the item is compared 
+with the middle element of the list.</p>
+<p>3. If the match is found then, the location of middle element is returned otherwise, we search into either of the halves 
+depending upon the result produced through the match.</p>
+<p>4. The only limitation is that the array or list of elements must be sorted for the binary search algorithm to work on it.</p>
+<br>
+<p>The following is our sorted array and let us assume that we need to search the location of value 31 using binary search.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\binary_search_0.jpg" width="50%"><br>
+<p>First, we shall determine half of the array by using this formula.</p>
+<pre class="result notranslate">
+mid = low + (high - low) / 2
+</pre>
+<p>Here it is, 0 + (9 - 0 ) / 2 = 4 (integer value of 4.5). So, 4 is the mid of the array.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\binary_search_1.jpg" width="50%">
+<p>Now we compare the value stored at location 4, with the value being searched, i.e. 31.<br> 
+We find that the value at location 4 is 27, which is not a match. As the value 
+is greater than 27 and we have a sorted array, so we also know that the target value must be in the upper portion of the array.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\binary_search_2.jpg" width="50%">
+<p>We change our low to mid + 1 and find the new mid value again.</p>
+<pre class="result notranslate">
+low = mid + 1
+mid = low + (high - low) / 2
+</pre>
+<p>Our new mid is 7 now. We compare the value stored at location 7 with our target value 31.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\binary_search_3.jpg" width="50%">
+<p>The value stored at location 7 is not a match, rather it is more than what we are looking for. So, the value must 
+be in the lower part from this location.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\binary_search_4.jpg" width="50%">
+<p>Hence, we calculate the mid again. This time it is 5.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\binary_search_5.jpg" width="50%">
+<p>We compare the value stored at location 5 with our target value. We find that it is a match.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\binary_search_6.jpg" width="60%">
+<p>We conclude that the target value 31 is stored at location 5.</p>
+<p>Binary search halves the searchable items and thus reduces the count of comparisons to be made to very less numbers.</p>
+</section>
+<hr>
+
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

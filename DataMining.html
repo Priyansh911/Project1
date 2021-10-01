@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data Mining</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <style>
+
+.header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 4660px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+<div class="header">
+<nab>
+                                         
+                                             <ul>
+                                                    <li> <a href="index.html" class="current">Home <i class="fa fa-home"></i></a> </li>
+                                                    </ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">Data Mining</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#Data">Data Mining</a></li>
+        <li><a href="#Warehouse">Data Warehouse</a></li>
+        <li><a href="#Data-n">Data De-Normalization</a></li>
+        <li><a href="#OLAP">OLAP</a></li>
+        <li><a href="#Weka">Weka</a></li>
+        <li><a href="#Data-V">Data visualization</a></li>     
+       </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>Data Mining Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#Data">Data Mining</a></li>
+        <li><a href="#Warehouse">Data Warehouse</a></li>
+        <li><a href="#Data-n">Data De-Normalization</a></li>
+        <li><a href="#OLAP">OLAP</a></li>
+        <li><a href="#Weka">Weka</a></li>
+        <li><a href="#Data-V">Data visualization</a></li>         
+      </ul><br>
+    </div>
+    <div class="col-md-8 text-left"> 
+   <div class="mainDiv">
+   <section id="Data"> 
+   <h2>Data Mining</h2>
+<p>Data mining is looking for hidden, valid, and potentially useful patterns in huge data sets.
+ Data Mining is all about discovering unsuspected/ previously unknown relationships amongst the data.
+</p>
+<p>Data mining is also called as Knowledge discovery, Knowledge extraction, data/pattern analysis, information harvesting, etc.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Mining.png" width="80%" align="center">
+<h3>Data Mining Applications</h3>
+<p>1. Market Analysis and Management</p>
+<p>2. Corporate Analysis & Risk Management</p>
+<p>3. Fraud Detection</p>
+<h3>Advantages of Data Mining</h3>
+<p><strong>Marketing / Retail : </strong> Data mining helps marketing companies build models 
+based on historical data to predict who will respond to the new marketing campaigns.</p>
+<p><strong>Finance / Banking : </strong>Data mining gives financial institutions information 
+about loan information and credit reporting</p>
+<p><strong>Manufacturing : </strong>By applying data mining in operational engineering data, 
+manufacturers can detect faulty equipment and determine optimal control parameters.</p>
+
+<h3>Disadvantages of Data mining </h3>
+<p><strong>Privacy Issues : </strong>The concerns about the personal privacy have been increasing 
+enormously recently especially when the internet is booming with social networks.</p>
+<p><strong>Security issues : </strong>Security is a big issue. Businesses own information about their
+ employees and customers including social security number.</p>
+<p><strong>Misuse of information/inaccurate information : </strong>
+Information is collected through data mining intended for the ethical purposes can be misused. </p>
+</section>
+<hr>
+<section id="Warehouse">
+<h2>Data Warehouse </h2> 
+<p>Data Warehouse is electronic storage of a large amount of information by a business which is designed for query.
+   It is a process of transforming data into information and making it available to users for analysis.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Warehouse.png" width="60%" align="center">
+<h3>Data Warehouse Features</h3>
+<p><strong>Subject Oriented : </strong>A data warehouse is subject oriented because it provides information
+ around a subject rather than the organization's ongoing operations. </p>
+<p><strong>Integrated : </strong>A data warehouse is constructed by integrating data from heterogeneous
+ sources such as relational databases, flat files, etc.</p>
+<p><strong>Time Varient : </strong>The data collected in a data warehouse is identified with a particular time period. </p>
+
+<p><strong>Non-volatile : </strong>Non-volatile means the previous data is not erased when new data is added to it.</p>
+<h3>Data Warehouse Applications</h3>
+<p>1. Financial services</p>
+<p>2. Banking services</p>
+<p>3. Consumer goods</p>
+<p>4. Consumer goods</p>
+</section>
+      <hr>
+
+
+<section id="Data-n">
+
+      <h2>Data De-Normalization</h2>
+
+<p>Data normalization is the process of organizing the fields and tables of a relational database to minimize redundancy.
+ Normalization usually involves dividing large tables into smaller tables and defining relationships between them. </p>
+<p>In some cases, <strong>Denormalization</strong> is a means of addressing performance or 
+scalability in relational database software.</p>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\data-n.png" width="70%" align="center"> 
+<h3>Applications :- </h3>
+<h4><strong>To enhance query performance </strong></h4>
+<p>Typically, a normalized database requires joining a lot of tables to fetch queries; but the more joins, the slower the query.</p>
+<h4><strong>To make a database more convenient to manage </strong></h4>
+<p>A normalized database doesn't have calculated values that are essential for applications.</p>
+<h4><strong>To facilitate and accelerate reporting </strong></h4>
+<p>Often, applications need to provide a lot of analytical and statistical information.</p>
+<h4><strong>Storing derivable data</strong></h4>
+<p>If you need to execute a calculation repeatedly during queries, it's best to store the results of it. </p>
+</section>
+<hr>
+
+<section id="OLP">
+<h2>OLAP</h2>
+
+<p>OLAP (online analytical processing) is a computing method that enables users to easily and 
+selectively extract and query data in order to analyze it from different points of view. </p>
+<p>business intelligence queries often aid in trends analysis, financial reporting,
+ sales forecasting, budgeting and other planning purposes.</p> 
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\OLAP.png" width="65%" align="center"> 
+<h3>Types of OLAP Servers</h3>
+<ul type="square">
+<li>Relational OLAP (ROLAP)</li>
+<li>Multidimensional OLAP (MOLAP)</li>
+<li>Hybrid OLAP (HOLAP)</li>
+<li>Specialized SQL Servers</li>
+</ul>
+<h4><strong>Relational OLAP (ROLAP)</strong></h4>
+<p>ROLAP servers are placed between relational back-end server and client front-end tools. To 
+store and manage warehouse data, ROLAP uses relational or extended-relational DBMS.</p>
+<h4><strong>Multidimensional OLAP (MOLAP)</strong></h4>
+<p>MOLAP uses array-based multidimensional storage engines for multidimensional views of data. With multidimensional data
+ stores, the storage utilization may be low if the data set is sparse</p>
+<h4><strong>Hybrid OLAP</strong></h4>
+<p>Hybrid OLAP is a combination of both ROLAP and MOLAP. It offers higher scalability of ROLAP and faster computation of MOLAP. 
+HOLAP servers allows to store the large data volumes of detailed information.</p>
+<h4><strong>Specialized SQL Servers</strong></h4>
+<p>Specialized SQL servers provide advanced query language and query processing support for SQL 
+queries over star and snowflake schemas in a read-only environment.</p>
+</section>
+<hr>
+<section id="Weka">
+<h2>Weka</h2>
+<p>Weka is data mining software that uses a collection of machine learning algorithms. 
+These algorithms can be applied directly to the data or called from the Java code.</p>
+<p><strong>Weka is a collection of tools for: </strong></p>
+<ul type="sqaure">
+<li>Regression</li>
+<li>Clustering</li>
+<li>Association</li>
+<li>Data pre-processing</li>
+<li>Classification</li>
+<li>Visualisation</li>
+</ul>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Weka.png" width="65%" align="center">
+</section>
+
+<hr>
+<section id="Data-V">
+<h2>Data visualization</h2>
+<p>Data visualization is the process of displaying data/information in graphical charts, figures and bars.</p>
+<p>It is used as means to deliver visual reporting to users for the performance, 
+operations or general statistics of an application, network, hardware or virtually any IT asset.</p>
+<h3>Application :- </h3>
+<ul type="square">
+<li> Enhanced Assimilation of Business Information</li>
+<li> Quick Access to Relevant Business Insights</li>
+<li> Better Understanding of Operational & Business Activities</li>
+<li> Rapid Identification of Latest Trends</li>
+<li> Accurate Customer Sentiment Analysis.</li>
+</ul>
+</section>
+<hr>
+
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>

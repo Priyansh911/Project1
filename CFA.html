@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Computer Fundamental</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ <style>
+
+ .header{
+      margin-bottom: 0;
+      background-color:  silver;
+    }
+nab {
+       float: right;
+       padding: 25px 20px 0 0;
+}
+nab ul li{
+             font-size: 150%;
+             display: inline-block;
+             float: left;
+             padding: 10px;
+}
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 5860px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f5f5f5;
+      height: 100%;
+      font-size:17px;
+    }
+.mainDiv{
+                   margin: 3px;
+                   min-height: 400px;
+                                          
+                   text-align: Left;
+                   font-size: 17px;
+                
+           }
+
+.rightDiv{
+                   margin: 3px;
+                   min-height: 300px;
+                   background-color: #f5f5f5;
+                   text-align: center;
+                   font-size: 18;
+           }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+ 
+ 
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 992px) {
+      .row.content {height: auto;} 
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<nab>
+                                         
+                         <ul>
+                             <li> <a href="index.html" class="current">Home <i class='fa fa-home'></i></a> </li>
+                             <li> <a href="Programming in C.html" class="current">Next <i class="fa fa-hand-o-right"></i></a> </li></ul></nab>
+ <div class="container text-left">
+ 
+    <h2>Last Minute Reading</h2>      
+    <p>Easy learning and Easy Scoring</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#">CFA </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#Introduction to C">Computer Overview</a></li>
+        <li><a href="#Block">Block Diagram of Computer</a></li>
+        <li><a href="#Input">Input Output Devices</a></li>
+        <li><a href="#Memory">Memory</a></li>
+        <li><a href="#Primary">Primary Memory</a></li>
+        <li><a href="#Secondary">Secondary Memory</a></li>
+        <li><a href="#Printer">Printer</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+  <div class="col-sm-2 sidenav hidden-xs">
+      <h3>CFA Tutorial</h3>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#Overview">Computer Overview</a></li>
+        <li><a href="#Block">Block Diagram of Diagram</a></li>
+        <li><a href="#Input">Input Output Devices</a></li>
+        <li><a href="#Memory"> Memory</a></li>
+        <li><a href="#Primary">Primary Memory</a></li>
+        <li><a href="#Secondary">Secondary Memory</a></li>
+        <li><a href="#Printer">Printer</a></li>
+      </ul><br>
+    </div>
+    
+    
+   
+<div class="col-md-8 text-left"> 
+<div class="mainDiv">
+<section id="Introduction to C">
+<h2>Computer Overview</h2>
+<p>A computer is an electronic data processing device, which accepts and stores data input,
+ processes the data input, and generates the output in a required format.</p>
+<h3>Functionalities of Computer:</h3>
+<p>If we look at it in a very broad sense, any digital computer carries out the following five functions.</p>
+<ul>
+<li><strong> Step 1 - </strong> Takes data as input.</li>
+<li><strong> Step 2 - </strong> Stores the data/instructions in its memory and uses them as required.</li>
+<li><strong> Step 3 - </strong> Processes the data and converts it into useful information.</li>
+<li><strong> Step 4 - </strong> Generates the output.</li>
+<li><strong> Step 5 - </strong> Controls all the above four steps.</li>
+</ul>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\computer.jpg" align="center" width="100%" >
+ <br><br>
+<h4><strong>Characteristics :</strong></h4><br>
+<p><strong>Speed : </strong> 
+ In general, no human being can compete to solving the complex computation, faster than computer.</p>
+<p><strong>Accuracy : </strong> 
+  Since Computer is programmed, so what ever input we give it gives result with accuratly.</p>
+<p><strong> Storage : </strong> 
+Computer can store mass storage of data with appropriate formate. </p>
+<p><strong>Versatility : </strong> 
+ We can use computer to perform completely different type of work at the same time.</p>
+<p><strong>Diligence : </strong> 
+We can use computer to perform completely different type of work at the same time.</p>
+
+</section>
+      <hr>
+<section id="Block">
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\download (10).png" width="45%" align="right">
+      <h3>Block Diagram of Computer</h3>
+
+    <p>A computer can process data, pictures, sound and graphics.
+ They can solve highly complicated problems quickly and accurately.
+  performs basically five major computer operations or functions irrespective of their size and make.</p>
+    <h4><strong>Central Processing Unit (CPU)  </strong></h4>
+    <p>The ALU and the CU of a computer system are jointly known as the central processing unit. 
+You may call CPU as the brain of any computer system. Makes all sorts of calculations and directs different
+ parts of the computer functions by activating and controlling the operations.</p>
+ <strong>1. Input</strong>
+<p>This is the process of entering data and programs in to the computer system, computer
+  takes as inputs raw data and performs some processing giving out processed data. </p> 
+<strong>2. Storage </strong>
+<p>The process of saving data and instructions permanently is known as storage. Data has to be fed into the system before 
+      the actual processing starts. It provides space for storing data and instructions.  </p> 
+<strong>3. Processing</strong>
+<p>The task of performing operations like arithmetic and logical operations is called processing. </p> 
+<strong>4. Output</strong>
+<p>This is the process of producing results from the data for getting useful information.  
+Similarly the output produced by the computer after processing must also be kept 
+somewhere inside the computer before being given to you in human readable form.  </p> 
+
+ <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo" id="btn1" > Read More </button>
+<div id="demo" class="collapse" >
+
+<strong>5. Control</strong>
+<p>The manner how instructions are executed and the above operations are performed.
+ Controlling of all operations like input, processing and output are performed by control unit.
+ It takes care of step by step processing of all operations inside the computer. </p> 
+<h4><strong>Arithmetic Logical Unit (ALU)  </h4></strong>
+<p>The actual processing of the data and instruction are performed by Arithmetic Logical Unit. The major operations performed
+ by the ALU are addition, subtraction, multiplication, division, logic and comparison.</p>
+<h4><strong>  Control Unit (CU) </h4></strong>
+<p>The control unit (CU) is a component of a computer's central processing unit (CPU) that directs the operation of the processor.
+ It tells the computer's memory, arithmetic and logic unit and input and
+ output devices how to respond to the instructions that have been sent to the processor.</p>
+
+ 
+</div>
+</section>
+<hr>
+<section id="Input">
+<h3> Input Devices </h3>
+<p>An input device is a hardware or peripheral device used to send data to a computer.
+ An input device allows users to communicate and feed instructions and data to computers for processing, display, storage.</p>
+
+<h3>Types of Input devices</h3>
+     <h4><strong> Keyboard and Mouse</strong></h4>
+<p>Input from a user and sends that data (input) to the computer.
+ They cannot accept or reproduce information (output) from the computer.</p>
+<h4><strong> Microphone </strong> </h4>
+<p>Sound generated by an input source, and sends that sound to a computer.</p>
+<h4><strong>Webcam </strong> </h4>
+<p>Receives images generated by whatever it is pointed at (input) and sends those images to a computer.</p>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo1" id="btn2">Read More</button>
+<div id="demo1" class="collapse">
+
+<h3> Output Devices</h3>
+<p>An output device is any device used to send data from a computer to another device or user.
+ Most computer data output that is meant for humans is in the form of audio or video.</p>
+<h4><strong> Moniter </strong> </h4>
+<p>Receives data from a computer (output) and displays that information as text and images for users to view.
+ It cannot accept data from a user and send that data to another device.</p>
+<h4><strong>Projector</strong></h4>
+<p>Receives data from a computer (output) and displays, or projects,
+ that information as text and images onto a surface, like a wall or a screen</p>
+<h4><strong>Speakers</strong></h4>
+<p>Receives sound data from a computer and plays the sounds for users to hear. 
+It cannot accept sound generated by users and send that sound to another device.</p>
+      </div>
+</section>
+<hr>
+<section id="Memory">
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\download (2).jpg" width="40%" align="right">
+<h3>Memory</h3>
+
+<p>A memory is just like a human brain. It is used to store data and instructions.
+ Computer memory is the storage space in the computer,
+ where data is to be processed and instructions required for processing are stored. </p>
+<br>
+<h4>Memory is mainly of three types :- </h4>
+<ul>
+
+<li>Cache Memory</li>
+<li>Primary Memory</li>
+<li>Secondary Memory</li>
+</ul>
+<br>
+<h4><strong>Cache Memory </strong></h4>
+
+<p> The Cache Memory is the volatile computer memory which is very nearest to the CPU ,
+all the Recent Instructions are Stored into the Cache Memory. It is the fastest memory that
+ provides high-speed data access to a computer microprocessor.<br>
+Cache meaning is that it is used for storing the input which is given ,
+but the Capacity of the Cache Memory is too low in compare to Memory (random access memory (RAM)) and Hard Disk.</p>
+<h4><strong>Primary Memory </strong></h4>
+<p>Primary memory holds only those data and instructions on which the computer is currently working. 
+It has a limited capacity and data is lost when power is switched off.
+ It is generally made up of semiconductor device. These memories are not as fast as registers. </p>
+
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo2" id="btn3">Read More</button>
+<div id="demo2" class="collapse">
+<br>
+<h4><strong>Secondary Memory</strong></h4>
+<p>This type of memory is also known as external memory or non-volatile. It is slower than the main memory.
+ These are used for storing data/information permanently. 
+CPU directly does not access these memories, instead they are accessed via input-output routines.</p>
+
+</div>
+</section>
+
+<hr>
+<section id="Primary">
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\download (3).jpg" width="50%" align="right">
+<h3>Primary Memory</h3>
+<p>Primary memory generally smaller in size, these are designed to hold data temporarily and are internal to the computer. 
+They have the fastest data access speed, and include RAM and cache memory.</p>
+<br>
+<h4><strong>RAM</strong></h4>
+RAM(Random Access Memory) is a part of computer's Main Memory which is directly accessible by CPU.
+<p> RAM is used to Read and Write data into it which is accessed by CPU randomly.
+ RAM is volatile in nature, it means if the power goes off, the stored information is lost.</p>
+<h4>RAM are available in two forms:-</h4>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\download (11).png" width="30%" align="Center">
+<ul>
+<li>SRAM(Static RAM)</li>
+<li>DRAM(Dynamic RAM)</li>
+</ul>
+<h4><strong>SRAM</strong></h4>
+<p>SRAM is type of RAM thta stores data using a static method, in which the data remains constant as long 
+as electric power is supplied to the memory. Because SRAM stores data statically,
+ it is faster and requires less power than DRAM.</p>
+<h4><strong>DRAM</strong></h4>
+<p>SRAM is more expensive to manufacture than DRAM because it is built using a more complex structure.
+This complexity also limits the amount of data a single chip can store, meaning SRAM chips cannot hold as
+much dat as DRAM chips.</p>
+
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo3" id="btn4">Read More</button>
+<div id="demo3" class="collapse">
+<br>
+<h3>ROM</h3>
+<p>Read-only memory (ROM) is a type of storage medium that permanently stores data
+ on personal computers (PCs) and other electronic devices.<br>Because ROM is read-only, it cannot be changed ,
+ it is permanent and non-volatile, meaning it also holds its memory even when power is removed.</p>
+<strong>ROM are available in three forms:- </strong><br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\download (12).png" width="30%" align="center">
+<ul>
+<li>Programmable Read-Only Memory (PROM) </li>
+<li>Electrically Programmable Read-Only Memory (EPROM)</li>
+<li>Electrically Erasable Programmable Read-Only Memory (EEPROM)</li>
+</ul>
+
+<h4><strong>PROM</strong></h4>
+<p>PROM is primarily meant for smaller productions that require some initial programming. 
+With PROM, the memory chips cannot be improved when they become obsolete.</p>
+<h4><strong>EPROM</strong></h4>
+<p>EPROM does not lose its content when the power supply is cut off and that can be erased and reused. 
+EPROMs are generally employed for programs designed for repeated use. </p>
+<h4><strong>EEPROM</strong></h4>
+<p>EEPROM is a stable, non-volatile memory storage system that is used for storing minimal data quantities 
+in computer and electronic systems and devices, such as circuit boards.</p>
+</div>
+</section>
+<hr>
+
+<section id="Secondary">
+<h3>Secondary Memory</h3>
+<p>Secondary memory is where programs and data are kept on a long-term basis. Common secondary
+ storage devices are the hard disk and optical disks. <br>
+The hard disk has enormous storage capacity compared to main memory.
+The hard disk is usually contained inside the case of a computer</p>
+
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\download (1).jpg" width="35%" align="center">
+<br><br>
+<h4><strong>Hard Disk</strong></h4>
+<p>A hard disk drive (HDD) is a non-volatile computer storage device containing magnetic disks or platters rotating at high speeds.
+ It is a secondary storage device used to store data permanently, random access memory (RAM) being the primary memory device.
+ <br>Non-volatile means data is retained when the computer is turned off.A hard disk drive is also known as a hard drive.
+ <a href="https://www.techopedia.com/definition/5288/hard-disk-drive">Read more.....</a></p><br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\HD.jpg" width="35%" align="center">
+<br>
+<br>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo4" id="btn5">Read More</button>
+<div id="demo4" class="collapse">
+<br>
+<h4><strong>CD(Compact Disk)</strong></h4>
+</div>
+</section>
+<hr>
+<section id="Printer">
+
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\printer.png" width="25%" align="right">
+<h3>Printer</h3>
+<p>A printer is an electromechanical device which converts the text and graphical documents from electronic
+ form to the physical form.<br> Generally they are the external peripheral devices which are
+ connected with the computers or laptops through a cable or wirelessly to receive input data and print them on the papers.</p>
+<h4><strong>Impact Printers</strong></h4>
+<p>In this hammers or pins strike against a ribbon and paper to print the text.
+ This mechanism is known as electro-mechanical mechanism. They are of two types:-</p>
+<ol>
+<li><strong>Character Printer</strong></li>
+<p>Prints only one character at a time. It has relatively slower speed. </p>
+<ul>
+<li><strong>Dot Matrix Printer </strong></li>
+<p>It prints characters as combination of dots. 
+These have a matrix of pins on the print head of the printer which form the character.<br> 
+ There is a carbon between the pins & the paper. 
+The words get printed on the paper when the pin strikes the carbon. There are generally 24 pins.  </p> 
+<li><strong>Daisy Wheel Printer</strong></li>
+<p>Daisy wheel printers print only characters and symbols and cannot print graphics.
+ They are generally slow with a printing speed of about 10 to 75 characters per second.</p>
+</ul>
+
+<li><strong>Line</strong></li>
+<p>The printers which print one line or character at a time such as line printers .</p>	
+<ul>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\Drum.png" width="35%" align="right">
+<li><strong>Drum Printer</strong></li>
+
+<p>Drum printer had printed characters etched on a physical drum that spun around and impacted paper in specific ways. 
+A series of hammers behind the paper would press the paper onto the drum at the right time, to create text on a page.</p>
+
+</ul>
+</ol>
+<br>
+<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#demo5" id="btn6">Read More</button>
+<div id="demo5" class="collapse">
+<br>
+<h4><strong>Non-Impact Printers</strong></h4>
+<p>There printers use non-Impact technology such as ink-jet or laser technology. 
+There printers provide better quality of O/P at higher speed. </p>
+<ul>
+<li><strong>Ink-Jet Printer</strong></li><br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\inkjet.jpg" width="25%" align="center">
+<p>It prints characters by spraying patterns of ink on the paper from a nozzle or jet. It prints from nozzles having very fine holes,
+ from which a specially made ink is pumped out to create various letters and shapes.</p>
+
+<li><strong>Laser Printer</strong></li><br>
+<img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\laserP.png" width="30%" align="center">
+<p>A laser printer uses a slight different approach for printing. It does 
+not use ink like inkjet printers, instead it uses a very fine powder known as "Toner".</p>
+</div>
+</section>
+<hr>
+</div>
+    </div>
+    
+             
+        <div class="col-md-2 well">
+        <div class="rightDiv">
+        <div class="row content">
+      <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong></p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+        
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+       <div class="thumbnail">
+        <p><strong>Last Minute Reading</strong> </p>
+        <img src="C:\Users\Dell\Downloads\Desktop\collection\image slider website\img\AKHIL.png" alt="Paris" width="400" height="300">
+       
+        <p>Fri. 27 November 2015</p>
+        <button class="btn btn-primary">Info</button>
+      </div>      
+    </div>
+  </div>
+</div>
+</div>
+
+<br>
+<script>
+var scroll= new SmoothScroll('a[href*="#"]');
+</script>
+
+</body>
+</html>
